@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes, ellipsis}
+
+% Specify paper size with geometry package
+\usepackage[bottom=1in, right=1in, left=1in, top=1in]{geometry}
+\usepackage{mathtools}
+
+% For citations, use the biblatex-chicago package
+\usepackage[backend=bibtex]{biblatex-chicago}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\addbibresource{works-cited.bib}
+
+% Information for title page
+\title{Post-Quantum Cryptography for Big Data: A Comparative Performance Evaluation of NIST-Selected Post-Quantum Cryptographic Schemes}
+\author{Arnab Ghosh}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Post-quantum cryptography has developed significantly in response to the acceleration of the possibility of a quantum computer capable of running Shor's algorithm, which theoretically may break the current state-of-the-art cryptographic standards based on RSA (factorization) and ECC (elliptic curve) cryptography. 
+    Currently, the projected cryptographic standard by the National Institute for Standards in Technology (NIST) has identified four lattice-based learning-with-errors cryptographic algorithms as the likely successors for a quantum-resistant cryptographic standard. 
+    However, LWE and Lattice-based cryptographic algorithms are known to be more memory inefficient than their state-of-the-art counterparts. 
+    This paper measures the comparative performance of the 4 NIST-selected post-quantum cryptographic algorithms: Dilithium, Kyber, Falcon, and SPHINCS to the current state-of-the-art in traditional cryptography using large encryption payloads and strict performance constraints.  
+\end{abstract}
+
+\section{Introduction}
+\subsection{Modern Cryptography}\label{subsec:cryptography}
+Cryptography describes the study of creating systems for encoding or decoding data; since the advent of digital computation even in its most primitive forms, it has become a primarily computational discipline.
+Cryptography is among the most important modern disciplines for maintaining the massive digital infrastructure network of the modern world.
+Databases, passwords, authentication, secure communication, website usage, financial transactions, and more all rely on cryptography to secure and protect from malicious third parties.
+
+Within cryptography, there exist many requirements for certain algorithms, each with unique use cases.
+Public-key cryptography, for example, describes the secure transmission of messages between two parties while guaranteeing security even if a third party has full knowledge of the exchange and may intercept the encrypted message.
+HTTPS, the primary protocol by which data on the internet is exchanged, relies on robust public-key cryptography to guarantee security versus standard HTTP\@.
+Hashing algorithms describe an algorithm that takes a given input and outputs a corresponding ciphertext.
+Effective hashing algorithms do not allow third-parties to take a hashed message and derive the original input.
+As such, one needs not compare the direct plaintext of a message (which is vulnerable to interception), but rather the hash, which theoretically is useless to any intercepting third party.
+Hashing algorithms are essential parts of nearly every branch of cryptography, including authentication and the storage of passwords as well as the abstract implementation of secure and fast database systems such as the Log-Structured-Merge-Tree or the Bloom Filter.
+
+\subsection{RSA}\label{subsec:rsa}
+RSA is a form of public-key encryption.
+Modern cryptography primarily relies on mathematical approaches, identifying a mathematical problem that is trivial with certain parameters given, but virtually impossible without. These are also called intractable problems \autocite{lam_cryptography_2001}.
+The most commonly used state-of-the-art encryption scheme in use currently descends from Rivest-Shamir-Adleman (RSA), a cryptosystem created in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman at the Massachusetts Institute of Technology.
+RSA relies on the difficulty of a certain mathematical problem within number theory, the branch of mathematics focusing on the study of numbers.
+More particularly, RSA uses the prime number factorization problem.
+
+RSA is generally described in its vanilla form in Schneier's \emph{Applied Cryptography} as follows~\autocite{schneier_applied_1996}, beginning with key generation ($\lambda$ is Caramichel's totient function):
+\begin{gather*}
+    \exists p, q  \in \mathbb{P}\\
+    n \coloneqq pq \\
+    \exists e \in \mathbb{Z} \mid 2 < e < \lambda(n) \text{ and } \gcd(e, \lambda(n)) = 1 \\
+    d \coloneqq e^{-1} \bmod{\lambda(n)}
+\end{gather*}
+Here, $d$ is the private key and $(n, e)$ is the public key.
+Usually, to guarantee security, $p, q$ are chosen to be very large and far from each other.
+Now that a key is generated, both parties know the key.
+Define the public key as follows, where $A$ is a set containing the message:
+\begin{gather*}
+    h: A \to \mathbb{Z} \\
+    m \coloneqq h(\text{message}) \mid 0 \leq m < n \\
+    \text{publickey} = (n, e) \\
+    c \coloneqq m^e \bmod{n}
+\end{gather*}
+Where $c$ is the encrypted ciphertext to be distributed.
+The message can be decrypted as follows:
+\begin{gather*}
+    c^d \equiv m^{e^d} \equiv m \bmod {n}
+\end{gather*}
+Where the decrypting party knows the secret key, $d$.
+RSA in the form presented does contain certain vulnerabilities; however, a litany of security layers are added in modern implementations which guarantee that RSA is virtually secure via classical methods.
+Without the given secret key, it is extremely difficult to compute the message given purely the public key (which may be intercepted) and the ciphertext (which also may be intercepted).
+
+\subsection{Elliptic Curves}
+Elliptic Curve Cryptography (ECC) takes advantage of another intractable mathematical problem; namely, that of discrete logarithms \autocite{schneier_applied_1996}. 
+Discrete logarithms are defined with the following, given a group $G$ and generator $g \in G$ and element $h \in G$ \autocite{schneier_applied_1996}: 
+\begin{gather*}
+    \log_{g}(h) = x \iff \exists x \in \mathbb{Z} \mid g^x = h
+\end{gather*}
+While numerical methods exist when $x \in \mathbb{R}$, finding a given \emph{integer} $x \in \mathbb{Z}$ is known to be an intractable problem. 
+Elliptic curves can provide more security to the discrete logarithm problem by defining $G$ as the group of all points in the elliptic curve, complexifying the requirements for a brute-force solution. 
+ECC is often preferred over traditional RSA due to the smaller key size requirements while guaranteeing equivalent security standards.
+ECC is used most prominently for public-key encryption\autocite{dhillon_elliptic_2016} and IoT security measures \autocite{tiwari_novel_2018} for this reason. 
+\subsection{Quantum Computing}
+Here, we make the distinction between Classical and Quantum computing models. 
+Virtually all currently used digital infrastructure and the vast majority of developed applications run on classical computing models. 
+Mathematically, classical computing models use binary bits to store and process data, where each bit stores a 0 or 1.
+Quantum Computing takes advantage of certain quantum mechanical properties, which emerged in the 1950s as an alternative to classical physics. 
+The principal difference between quantum and classical computing models is data storage: rather than bits, quantum computers use qubits.
+Qubits also alternate between 0 and 1; however, due to the quantum mechanical property of superposition, a qubit may be both 0 and 1 simultaneously. \autocite{lapierre_introduction_2021}
+Various other quantum mechanical properties such as entanglement\autocite{bub_quantum_2001} have consequences for qubit measurement, allowing one to observe the state of many qubits at once due to their "linked" nature. 
+
+Quantum computers are thus able to solve certain problems much more efficiently than classical computers due to the superposition of states on qubits and the parallel power afforded by entanglement. 
+However, because quantum computers differ in such a fundamental manner from classical computing models, the array of problems that each can solve is limited. 
+Quantum entanglement and superposition lead to multiple complexities when performing certain computations, as they are much more susceptible to noise and error.
+On classical computing models, measuring the position of a bit is a trivial operation. 
+However, on quantum computing models, measuring the position of a qubit may be a tricky matter. 
+While entanglement may allow for the optimization of certain tasks, it also complicates the behavior of others due to random behavior, which is unfortunately fundamental to quantum particles. \autocite{bub_quantum_2001}
+Additionally, the very act of measurement for quantum particles, including qubits, contains the possibility of changing the state and thus polluting the result.
+
+\subsection{Shor's Algorithm}
+Among the most early, and applicable, applications of quantum computing come from Shor's algorithm. 
+Shor's algorithm describes a theoretical model for efficient polynomial-time (of order $O(\log{n})$) of factorization into large prime numbers \autocite{shor_polynomial-time_1997}.
+Further iterations and extrapolations of Shor's original algorithm have revealed that it may also be used to solve the discrete logarithm problem. 
+The former two applications of the algorithm stand as a threat to most modern cryptography, which relies on the intractability of the discrete logarithm and factorization problem. 
+The intractability of the aforementioned problems guarantees virtually complete security; however, given Shor's algorithm, one may theoretically solve each problem in a matter of days given a sufficiently powerful quantum computer. 
+While the estimates for a quantum computer large enough to compute Shor's algorithm for realistically complex inputs to break encryption do estimate a generous time allocation before such possibilities, the development of quantum computing has grown exponentially (partially due to the desire to break RSA/Elliptic Curve Cryptography).
+
+The primary purpose of Shor's algorithm is to solve the aforementioned factorization problem. Let us define it as follows: 
+\emph{Find the integer factors $(p_i, m)$ of a composite integer $N$}. 
+Note that $m$ denotes the multiplicity of a given prime $p_i$ in the prime factorization of $N$. 
+Shor's algorithm aims to solve a slightly modified version of this problem which may be trivially extrapolated to the original \autocite{shor_polynomial-time_1997}: 
+\emph{Find two nonzero integer factors $p, q$ of $N$}.
+Shor's algorithm takes the approach of reducing this problem to the order-finding problem, and then solves the order-finding problem using a quantum algorithm. 
+The order-finding problem is defined as follows: 
+$$ \text{ord}_a = r \iff a^r \equiv 1 \bmod{N}$$
+To solve this problem, Shor's algorithm first picks a random $a \mid 1 < a < N$ \autocite{lam_cryptography_2001}. 
+Using the Euclidean algorithm:
+$$ x = \text{gcd}(a, N)$$
+If $x \neq 1$, then we have found a factor of $N$ and can thus compute, with each factor as integers:  
+$$N = x \cdot \frac{N}{x}$$ 
+If $x = 1$, then using a quantum algorithm, we compute: 
+$$r = \text{ord}_a$$. 
+If $r$ is odd, we pick a random $a$ as in the beginning and retry.
+Otherwise, we compute: 
+$$ g = \text{gcd}(N, a^{\frac{r}{2}} + 1)$$
+Should $g \neq 1$, we have found a non-trivial calculation; otherwise, we continue choosing random $a$. 
+Shor's paper proves that this iteration runs a trivially finite amount of iterations and thus will eventually work \autocite{shor_polynomial-time_1997}. 
+
+As alluded to before, Shor's algorithm does not present as large of a threat to current state-of-the-art cryptography as one may seem in part due to additional complications that arise from the quantum order-finding algorithm \autocite{roetteler_quantum_2017}. 
+However, rapidly advancing quantum computing technology in addition to problems posed by the SDNL (Store-now, decrypt-later) scheme provide additional urgency to the problem of \emph{Post-Quantum Cryptography}.
+
+\subsection{Post-Quantum Cryptography}
+It is important to make a distinction between Post-Quantum Cryptography (PQC) \autocite{blanco-chacon_ring_2019} and Quantum Cryptography (QC) \autocite{pirandola_advances_2020}. 
+Post-quantum cryptography describes the development and implementation of cryptographic schemes resistant to attacks posed by Shor's algorithm and its derivatives. 
+Quantum Cryptography alludes to the field of cryptography emerging from certain quantum mechanical properties such as entanglement. 
+While this paper will give a short overview of the state of QC in the race for efficient, practical PQC, it is important to note that the primary focus of this paper will be studying PQC. 
+
+Currently, the most optimal mathematical problem identified for PQC is known as the Learning with Errors (LWE) problem, also known as Lattice-based cryptography \autocite{blanco-chacon_ring_2019}. 
+It is important to note that by all indications, though certain intractibile problems may be trivially broken in polynomial time by quantum computers, NP-hard problems appear to be immune from such concerns. 
+It follows, then, that should one identify a suitable mathematical NP-hard problem, you may develop an effective PQC cipher. 
+The problem arises from the fact that finding a suitable NP-hard problem is extremely difficult under the required parameters, particularly given the efficient use of such an algorithm \autocite{blanco-chacon_ring_2019}.
+Several candidates such as the Jacobians of hyperelliptic curves are not feasible solutions for this reason. 
+
+Lattice-based cryptography derives its security from the closest-vector problem (CVP) and the smallest vector problem (SVP). 
+Note: the length of an n-dimensional vector $v$ is defined as the euclidean length, where $v_i$ denotes the magnitude of $v$ in the $i$-th dimension: 
+$$ ||v|| = \sqrt{\sum_{i=1}^{n}v^2_i} $$
+Given a lattice $L$, SVP is defined as finding a vector $x \in L$ as below \autocite{blanco-chacon_ring_2019}: 
+$$ x \in L : \forall y \in L, || x || \leq || y || $$
+CVP is a quite similar problem \autocite{blanco-chacon_ring_2019}. Given a point $y$ in $\mathbb{R}^n$, $x_y$ is as follows: 
+$$ x_y \in L : \forall x \in L, || y - x_y || \leq || y - x || $$
+Because both SVP and CVP are NP-hard, LWE is also NP hard, and is thus a theoretically viable PQC scheme. \autocite{vaikuntanathan_advanced_2015}
+
+\section{Literature Review}\label{sec:literature-review}
+
+\subsection{Viability of Post-Quantum Cryptography}
+Fortunately, the development of lattice-based LWE cryptography has significantly accelerated since the identification of Shor's algorithm as a credible threat to state-of-the-art cryptography. 
+Prior to the early 2010s, the development of PQC standards suffered due to a limited knowledge of the true threat it presented. 
+It was not believed that a large enough quantum computer would be developed in time for the identified problem to pose a major threat. 
+However, the significant acceleration of quantum-computing based developments shifted the timeline for the potential arrival of capable quantum computers by a magnitude of decades; while an exact estiamte is not currently known, NIST has, in response, identified post-quantum cryptography as a critical security crisis \autocite{computer_security_division_post-quantum_2017}. 
+In 2016, the National Institute of Standards in Technology (NIST) held a competition to begin the standardization of a robust, secure, and efficient PQC scheme \autocite{noauthor_public-key_2016}.
+While developments had been made prior to the introduction of a formal standard, NIST's announcement began the formal process and continued accelerating development. 
+Submissions were closed in late 2017; while a large variety of potential mathematical problems were studied, typically, algorithms featuring lattice-based cryptography generally fared better than others. 
+As recently as August 2023, NIST enshrined three federal information processing standards as the United States' post-quantum cryptographic standard for the forseeable future \autocite{noauthor_three_2023}: FIPS 203, FIPS 204, FIPS 205. 
+
+NIST has selected four algorithms to lay at the foundation of the future post-quantum security framework: CRYSTALS-Kyber for general encryption; and CRYSTALS-Dilithium, FALCON, SPHINCS for digital signatures. 
+These four algorithms comprise the aforementioned brand new Federal Information Processing Standards (FIPS) \autocite{noauthor_nist_2022}.
+FIPS 203 describes a post-quantum key encapsulation mechanism (KEM) called ML-KEM, which dictates how the private or public key may be transmitted securely from party to party for purposes of verification. 
+ML-KEM utilizes a variation of the LWE problem called the Module Learning with Errors problem, which is similarly NP-hard and thus is secure against Shor's algorithm. 
+FIPS 203 includes three parameter sets for ML-KEM: ML-KEM-512, ML-KEM-768, and ML-KEM-1024 in increasing order of security and resource usage. \autocite{noauthor_module-lattice-based_2023}
+FIPS 204 specifies the standards for post-quantum key establishment and digital signature schemes. 
+FIPS 204 packages three selected post-quantum algorithms from the NIST competition under ML-DSA, each of which can be used to verify digital signatures. 
+Similar to FIPS 203, FIPS 204 contains three parameter sets for ML-DSA: ML-DSA-44, ML-DSA-65, ML-DSA-87; once again, in increasing order of security and resource usage. \autocite{noauthor_module-lattice-based_2023-1}
+FIPS 205 \autocite{noauthor_stateless_2023} describes a post-quantum stateless digital signature standard, based on the SPHINCS+ algoritm selected at the conclusion of the NIST PQC competition. \autocite{noauthor_nist_2022} 
+
+\subsection{Performant Post-Quantum Cryptography}
+While PQC has undoubtely made significant leaps in performance even for significant restraints \autocite{guillen_towards_2017} over the prior decades, post-quantum cryptography is relatively raw in development \autocite{p_c_analysis_2022} compared to current state-of-the-art cryptographic, though that is to be expected. 
+Lattice-based LWE PQC encryption schemes are much more mathematically complex than their state-of-the-art counterparts: while ECC ciphers often excel in low performance scenarios \autocite{dhillon_elliptic_2016} even with smaller key-sizes in low-performance environments such as the Internet of Things (IoT), LWE PQC algorithms often require much more memory \autocite{schoffel_energy_2021}. 
+For this reason, while LWE has been identified as feasible on IoT devices \autocite{akleylek_new_2022} by performance metrics, memory requirements damper the potential of PQC on smaller, performance-constrained devices. \autocite{ristov_quantum_2023}
+In addition, the additional memory requirements often complicate the integration of PQC into existing technology.
+
+Notably, while there is a significant amount of research output on the performance and viability of PQC on IoT and other small devices, in addition to significant benchmarking on traditional workloads, there is a lack of data on the performance of the NIST selected post-quantum algorithms in scenarios with large payloads. 
+During the inevitable final transition away from traditional state-of-the-art encryption measures, large databases will benefit from the ability to quickly transition existing encrypted data to quantum-resistant standards. 
+However, the high memory requirements of current post-quantum cryptographic algorithms dictate that such a transition will likely be difficult. 
+This paper aims to analyze the current capabilities of the NIST-selected PQC algorithms with large payloads compared to that of traditional state-of-the-art cryptography and identify areas of potential improvement for new cryptographic standards. 
+
+\section{Method}
+In this paper, we aim to demonstrate the comparative performance of NIST-selected post-quantum cryptographic algorithms to current state-of-the-art cryptography; particularly, in situations requiring large data throughput in which performance considerations beyond simple feasibility require consideration. 
+\subsection{Virtualization}
+In line with previous performance benchmarks of a similar nature \autocite{liu_iot-nums_2019}, we opt to test each algorithm via a virtualized approach using equivalent performance constraints and same underlying infrastructure.
+We decide not to test performance on raw metal as to standardize the process and remove as much entropy from results as possible. 
+Docker is selected as the platform for virtualization; while there have been documented instances of Docker performance overhead, the comparative nature of this paper allows us to ignore this consideration. 
+Docker is chosen primarily for configurability; utilizing Docker's featureset, we are able to automate the generation of constraint configurations, affording us greater ability to adjust experimental parameters. 
+
+
+\subsection{Approach}
+Recall that we may categorize cryptographic communication methods into two categories: public-key encryption and private-key encryption. 
+Public-key encryption mechanisms are often implemented in the form of Key Exchange Mechansims (KEM). 
+We define a KEM as a triplet of functions:  
+\printbibliography
+
+\end{document}
