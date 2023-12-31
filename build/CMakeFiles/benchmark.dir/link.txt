@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/benchmark.dir/source/benchmark.cpp.o -o binaries/benchmark 

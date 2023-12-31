@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/payload.dir/source/payload.cpp.o -o binaries/payload 

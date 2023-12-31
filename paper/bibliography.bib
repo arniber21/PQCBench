@@ -1,0 +1,655 @@
+@article{akleylekNewLatticebasedAuthentication2022,
+  title = {A New Lattice-Based Authentication Scheme for {{IoT}}},
+  author = {Akleylek, Sedat and Soysaldı, Meryem},
+  date = {2022-02},
+  journaltitle = {Journal of Information Security and Applications},
+  volume = {64},
+  pages = {103053},
+  issn = {2214-2126},
+  doi = {10.1016/j.jisa.2021.103053},
+  url = {https://www.sciencedirect.com/science/article/pii/S2214212621002398},
+  urldate = {2023-08-18},
+  abstract = {In this paper, we propose a lattice-based authentication scheme for IoT technologies such as RFID systems. The security of the proposed scheme is based on ISIS problem which helps to resist to quantum attacks. The proposed scheme satisfies zero-knowledge property. Moreover, the location privacy, unforgeability, scalability and forward secrecy properties are achieved. The proposed scheme also has a resistance to man in the middle, replay and impersonation attacks. Moreover, its efficiency is comparable with the recent studies.},
+  keywords = {Authentication scheme,Internet of things,Lattice-based,Post-quantum cryptography,Radio-frequency identification tags}
+}
+
+@inproceedings{alaniApplicationsMachineLearning2019,
+  title = {Applications of Machine Learning in Cryptography: A Survey},
+  shorttitle = {Applications of Machine Learning in Cryptography},
+  booktitle = {Proceedings of the 3rd {{International Conference}} on {{Cryptography}}, {{Security}} and {{Privacy}}},
+  author = {Alani, Mohammed M.},
+  date = {2019-01},
+  series = {{{ICCSP}} '19},
+  pages = {23--27},
+  publisher = {{Association for Computing Machinery}},
+  location = {{New York, NY, USA}},
+  doi = {10.1145/3309074.3309092},
+  url = {https://dl.acm.org/doi/10.1145/3309074.3309092},
+  urldate = {2023-08-23},
+  abstract = {Machine learning techniques have had a long list of applications in recent years. However, the use of machine learning in information and network security is not new. Machine learning and cryptography have many things in common. The most apparent is the processing of large amounts of data and large search spaces. In its varying techniques, machine learning has been an interesting field of study with massive potential for application. In the past three decades, machine learning techniques, whether supervised or unsupervised, have been applied in cryptographic algorithms, cryptanalysis, steganography, among other data-security-related applications. This paper presents an updated survey of applications of machine learning techniques in cryptography and cryptanalysis. The paper summarizes the research done in these areas and provides suggestions for future directions in research.},
+  isbn = {978-1-4503-6618-2},
+  keywords = {cryptanalysis,cryptography,machine learning}
+}
+
+@misc{banegasConcreteQuantumCryptanalysis2020,
+  title = {Concrete Quantum Cryptanalysis of Binary Elliptic Curves},
+  author = {Banegas, Gustavo and Bernstein, Daniel J. and family=Hoof, given=Iggy, prefix=van, useprefix=false and Lange, Tanja},
+  date = {2020},
+  url = {https://eprint.iacr.org/2020/1296},
+  urldate = {2023-08-18},
+  abstract = {This paper analyzes and optimizes quantum circuits for computing discrete logarithms on binary elliptic curves, including reversible circuits for fixed-base-point scalar multiplication and the full stack of relevant subroutines. The main optimization target is the size of the quantum computer, i.e., the number of logical qubits required, as this appears to be the main obstacle to implementing Shor's polynomial-time discrete-logarithm algorithm. The secondary optimization target is the number of logical Toffoli gates. For an elliptic curve over a field of 2ˆn elements, this paper reduces the number of qubits to 7n+[log\_2(n)]+9. At the same time this paper reduces the number of Toffoli gates to 48nˆ3+8nˆ(log\_2(3)+1)+352nˆ2 log\_2(n)+512nˆ2+O(nˆ(log\_2(3))) with double-and-add scalar multiplication, and a logarithmic factor smaller with fixed-window scalar multiplication. The number of CNOT gates is also O(nˆ3). Exact gate counts are given for various sizes of elliptic curves currently used for cryptography.},
+  keywords = {elliptic curves,Quantum cryptanalysis,quantum gates,quantum resource estimation,Shor’s algorithm}
+}
+
+@misc{banegasQuantumResistantSecuritySoftware2021,
+  title = {Quantum-{{Resistant Security}} for {{Software Updates}} on {{Low-power Networked Embedded Devices}}},
+  author = {Banegas, Gustavo and Zandberg, Koen and Herrmann, Adrian and Baccelli, Emmanuel and Smith, Benjamin},
+  date = {2021-06},
+  doi = {10.48550/arXiv.2106.05577},
+  url = {http://arxiv.org/abs/2106.05577},
+  urldate = {2023-08-18},
+  abstract = {As the Internet of Things (IoT) rolls out today to devices whose lifetime may well exceed a decade, conservative threat models should consider attackers with access to quantum computing power. The SUIT standard (specified by the IETF) defines a security architecture for IoT software updates, standardizing the metadata and the cryptographic tools-namely, digital signatures and hash functions-that guarantee the legitimacy of software updates. While the performance of SUIT has previously been evaluated in the pre-quantum context, it has not yet been studied in a post-quantum context. Taking the open-source implementation of SUIT available in RIOT as a case study, we overview post-quantum considerations, and quantum-resistant digital signatures in particular, focusing on lowpower, microcontroller-based IoT devices which have stringent resource constraints in terms of memory, CPU, and energy consumption. We benchmark a selection of proposed post-quantum signature schemes (LMS, Falcon, and Dilithium) and compare them with current pre-quantum signature schemes (Ed25519 and ECDSA). Our benchmarks are carried out on a variety of IoT hardware including ARM Cortex-M, RISC-V, and Espressif (ESP32), which form the bulk of modern 32-bit microcontroller architectures. We interpret our benchmark results in the context of SUIT, and estimate the real-world impact of post-quantum alternatives for a range of typical software update categories. CCS CONCEPTS \{\textbackslash textbackslashbullet\textbackslash{} Computer systems organization \{\textbackslash textbackslashrightarrow\textbackslash{} Embedded systems.\vphantom{\}\}}},
+  organization = {{arXiv}},
+  keywords = {Computer Science - Cryptography and Security}
+}
+
+@online{basuNISTPostQuantumCryptography2019,
+  title = {{{NIST Post-Quantum Cryptography- A Hardware Evaluation Study}}},
+  author = {Basu, Kanad and Soni, Deepraj and Nabeel, Mohammed and Karri, Ramesh},
+  date = {2019},
+  number = {2019/047},
+  url = {https://eprint.iacr.org/2019/047},
+  urldate = {2023-12-08},
+  abstract = {Experts forecast that quantum computers can break classical cryptographic algorithms. Scientists are developing post quantum cryptographic (PQC) algorithms, that are invulnerable to quantum computer attacks. The National Institute of Standards and Technology (NIST) started a public evaluation process to standardize quantum-resistant public key algorithms. The objective of our study is to provide a hardware comparison of the NIST PQC competition candidates. For this, we use a High-Level Synthesis (HLS) hardware design methodology to map high-level C specifications of selected PQC candidates into both FPGA and ASIC implementations.},
+  pubstate = {preprint},
+  keywords = {Hardware Implementation,Post-Quantum Cryptography},
+  annotation = {Publication info: Preprint. MINOR revision.},
+  file = {C:\Users\arnab\Zotero\storage\6VTZG656\Basu et al. - 2019 - NIST Post-Quantum Cryptography- A Hardware Evaluat.pdf}
+}
+
+@article{bennettStrengthsWeaknessesQuantum1997,
+  title = {Strengths and {{Weaknesses}} of {{Quantum Computing}}},
+  author = {Bennett, Charles H. and Bernstein, Ethan and Brassard, Gilles and Vazirani, Umesh},
+  date = {1997-10},
+  journaltitle = {SIAM J. Comput.},
+  volume = {26},
+  number = {5},
+  pages = {1510--1523},
+  issn = {0097-5397},
+  doi = {10.1137/S0097539796300933},
+  url = {https://epubs.siam.org/doi/10.1137/S0097539796300933},
+  urldate = {2023-08-18},
+  abstract = {In this paper we study quantum computation from a complexity theoretic viewpoint. Our first result is the existence of an efficient universal quantum Turing machine in Deutsch's model of a quantum Turing machine (QTM) [Proc. Roy. Soc. London Ser. A, 400 (1985), pp. 97–117]. This construction is substantially more complicated than the corresponding construction for classical Turing machines (TMs); in fact, even simple primitives such as looping, branching, and composition are not straightforward in the context of quantum Turing machines. We establish how these familiar primitives can be implemented and introduce some new, purely quantum mechanical primitives, such as changing the computational basis and carrying out an arbitrary unitary transformation of polynomially bounded dimension.We also consider the precision to which the transition amplitudes of a quantum Turing machine need to be specified. We prove that \textbackslash O(\textbackslash textbackslashlog T)\textbackslash{} bits of precision suffice to support a T step computation. This justifies the claim that the quantum Turing machine model should be regarded as a discrete model of computation and not an analog one. We give the first formal evidence that quantum Turing machines violate the modern (complexity theoretic) formulation of the Church–Turing thesis. We show the existence of a problem, relative to an oracle, that can be solved in polynomial time on a quantum Turing machine, but requires superpolynomial time on a bounded-error probabilistic Turing machine, and thus not in the class \{\textbackslash textbackslashBPP\textbackslash. The class \{\textbackslash textbackslashBQP\textbackslash{} of languages that are efficiently decidable (with small error-probability) on a quantum Turing machine satisfies \{\textbackslash textbackslashBPP \textbackslash textbackslashsubseteq \textbackslash textbackslashBQP \textbackslash textbackslashsubseteq \textbackslash textbackslashPtimeˆ\{\textbackslash textbackslashSP\}\textbackslash. Therefore, there is no possibility of giving a mathematical proof that quantum Turing machines are more powerful than classical probabilistic Turing machines (in the unrelativized setting) unless there is a major breakthrough in complexity theory.\vphantom{\}\}\}}}
+}
+
+@book{blanco-chaconRingLearningErrors2019,
+  title = {Ring {{Learning}} with {{Errors}}: {{A Crossroads Between Post-Quantum Cryptography}}, {{Machine Learning}} and {{Number Theory}}},
+  shorttitle = {Ring {{Learning}} with {{Errors}}},
+  author = {Blanco-Chacón, Iván},
+  date = {2019-02},
+  abstract = {The present survey reports on the state of the art of the different cryptographic functionalities built upon the ring learning with errors problem and its interplay with several classical problems in algebraic number theory. The survey is based to a certain extent on an invited course given by the author at the Basque Center for Applied Mathematics in September 2018.}
+}
+
+@article{bubQuantumEntanglementInformation2001,
+  title = {Quantum {{Entanglement}} and {{Information}}},
+  author = {Bub, Jeffrey},
+  date = {2001-08},
+  url = {https://seop.illc.uva.nl/entries/qt-entangle/},
+  urldate = {2023-09-23}
+}
+
+@article{cesareOnlineSecurityBraces2015,
+  title = {Online Security Braces for Quantum Revolution},
+  author = {Cesare, Chris},
+  date = {2015-09},
+  journaltitle = {Nature},
+  volume = {525},
+  number = {7568},
+  pages = {167--168},
+  issn = {1476-4687},
+  doi = {10.1038/525167a},
+  url = {https://www.nature.com/articles/525167a},
+  urldate = {2023-08-18},
+  abstract = {Encryption fix begins in preparation for arrival of futuristic computers.},
+  langid = {english},
+  keywords = {Computer science,Mathematics and computing,Quantum information,Quantum physics}
+}
+
+@report{computersecuritydivisionPostQuantumCryptographyTextbar2017,
+  title = {Post-{{Quantum Cryptography}} \textbackslash textbar {{CSRC}} \textbackslash textbar {{CSRC}}},
+  author = {Computer Security Division, Information Technology Laboratory},
+  date = {2017-01},
+  institution = {{National Institute for Standards in Technology}},
+  url = {https://csrc.nist.gov/projects/post-quantum-cryptography},
+  urldate = {2023-09-29},
+  abstract = {Draft FIPS 203, FIPS 204 and FIPS 205, which specify algorithms derived from CRYSTALS-Dilithium, CRYSTALS-KYBER and SPHINCS+, were published August 24, 2023. The public comment period will close November 22, 2023. PQC Seminars Next Talk: October 6, 2023 Additional Digital Signature Schemes - Round 1 Submissions PQC License Summary \& Excerpts Background NIST initiated a process to solicit, evaluate, and standardize one or more quantum-resistant public-key cryptographic algorithms. Full details can be found in the Post-Quantum Cryptography Standardization page. In recent years, there has been a substantial amount of research on quantum computers – machines that exploit quantum mechanical phenomena to solve mathematical problems that are difficult or intractable for conventional computers. If large-scale quantum computers are ever built, they will be able to break many of the public-key cryptosystems currently in use. This would seriously compromise the confidentiality and integrity of digital...},
+  langid = {american}
+}
+
+@inproceedings{dhillonEllipticCurveCryptography2016,
+  title = {Elliptic Curve Cryptography for Real Time Embedded Systems in {{IoT}} Networks},
+  booktitle = {2016 5th {{International Conference}} on {{Wireless Networks}} and {{Embedded Systems}} ({{WECON}})},
+  author = {Dhillon, Parwinder Kaur and Kalra, Sheetal},
+  date = {2016-10},
+  pages = {1--6},
+  doi = {10.1109/WECON.2016.7993462},
+  abstract = {Internet of things (IoT) is a growing network of embedded devices that can interact with the external environment. With this increasing global network, electronic communication between devices is becoming wireless and ubiquitous. Also, most of the IoT services will be realized as real time embedded systems which rely heavily on security mechanisms. This makes security imperative to embedded devices in IoT. This paper presents security challenges faced by system designers while designing secure embedded systems. The most difficult task for embedded system security is implementation of Public Key Cryptography (PKC). PKC based on Elliptic Curve Cryptography (ECC) which uses smaller key sizes is efficient for both private and public operations. Moreover, with IoT several embedded devices are becoming interconnected which makes ECC advantageous when you need to embed security. The comparative study suggests that ECC is best suited for resource constrained real time embedded systems in IoT.},
+  keywords = {Authentication,cryptography,ECC,Elliptic curve cryptography,Embedded systems,internet of things,Protocols,real time embedded systems,Real-time systems,security}
+}
+
+@article{ebrahimiPostQuantumCryptoprocessorsOptimized2019,
+  title = {Post-{{Quantum Cryptoprocessors Optimized}} for {{Edge}} and {{Resource-Constrained Devices}} in {{IoT}}},
+  author = {Ebrahimi, Shahriar and Bayat-Sarmadi, Siavash and Mosanaei-Boorani, Hatameh},
+  date = {2019-06},
+  journaltitle = {IEEE Internet of Things Journal},
+  volume = {6},
+  number = {3},
+  pages = {5500--5507},
+  issn = {2327-4662},
+  doi = {10.1109/JIOT.2019.2903082},
+  abstract = {By exponential increase in applications of the Internet of Things (IoT), such as smart ecosystems or e-health, more security threats have been introduced. In order to resist known attacks for IoT networks, multiple security protocols must be established among nodes. Thus, IoT devices are required to execute various cryptographic operations, such as public key encryption/decryption. However, classic public key cryptosystems, such as Rivest-Shammir-Adlemon and elliptic curve cryptography are computationally more complex to be efficiently implemented on IoT devices and are vulnerable regarding quantum attacks. Therefore, after complete development of quantum computing, these cryptosystems will not be secure and practical. In this paper, we propose InvRBLWE, an optimized variant for binary learning with errors over the ring (Ring-LWE) scheme that is proven to be secure against quantum attacks and is highly efficient for hardware implementations. We propose two architectures for InvRBLWE: 1) a high-speed architecture targeting edge and powerful IoT devices and 2) an ultralightweight architecture, which can be implemented on resource-constrained nodes in IoT. The proposed architectures are scalable regarding security levels and we provide experimental results for two versions of the InvRBLWE scheme providing 84 and 190 bits of classic security. Our implementation results on field programmable gate array dominate the best of the classic and post-quantum previous implementations. Moreover, our two different application specific integrated circuit (ASIC) implementations show improvement in terms of speed, area, power, and/or energy. To the best of our knowledge, we are the first to implement learning with error-based cryptosystems on ASIC platform.},
+  keywords = {Computer architecture,Elliptic curve cryptography,Hardware,Hardware implementation,Internet of Things,Internet of Things (IoT),lattice-based cryptography,post-quantum cryptography,ring learning with errors (Ring-LWEs)}
+}
+
+@article{gisinQuantumCryptography2002,
+  title = {Quantum Cryptography},
+  author = {Gisin, Nicolas and Ribordy, Grégoire and Tittel, Wolfgang and Zbinden, Hugo},
+  date = {2002-03},
+  journaltitle = {Rev. Mod. Phys.},
+  volume = {74},
+  number = {1},
+  pages = {145--195},
+  doi = {10.1103/RevModPhys.74.145},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.74.145},
+  urldate = {2023-08-23},
+  abstract = {Quantum cryptography could well be the first application of quantum mechanics at the single-quantum level. The rapid progress in both theory and experiment in recent years is reviewed, with emphasis on open questions and technological issues.}
+}
+
+@inproceedings{guillenPostquantumSecurityIoT2017,
+  title = {Towards Post-Quantum Security for {{IoT}} Endpoints with {{NTRU}}},
+  booktitle = {Design, {{Automation}} \& {{Test}} in {{Europe Conference}} \& {{Exhibition}} ({{DATE}}), 2017},
+  author = {Guillen, Oscar M. and Pöppelmann, Thomas and Bermudo Mera, Jose M. and Bongenaar, Elena Fuentes and Sigl, Georg and Sepulveda, Johanna},
+  date = {2017-03},
+  pages = {698--703},
+  doi = {10.23919/DATE.2017.7927079},
+  abstract = {The NTRU cryptosystem is one of the main alternatives for practical implementations of post-quantum, public-key cryptography. In this work, we analyze the feasibility of employing the NTRU encryption scheme, NTRUEncrypt, in resource constrained devices such as those used for Internet-of-Things endpoints. We present an analysis of NTRUEncrypt's advantages over other cryptosystems for use in such devices. We describe four different NTRUEncrypt implementations on an ARM Cortex M0-based microcontroller, compare their results, and show that NTRUEncrypt is suitable for use in battery-operated devices. We present performance and memory footprint figures for different security parameters, as well as energy consumption in a resource constrained microcontroller to backup these claims. Furthermore, to the best of our knowledge, in this work we present the first time-independent implementation of NTRUEncrypt.},
+  keywords = {Elliptic curve cryptography,embedded devices,Encryption,IoT,Microcontrollers,NTRUEncrypt,Optimization,post-quantum,security}
+}
+
+@article{hekkalaImplementingPostquantumCryptography2023,
+  title = {Implementing {{Post-quantum Cryptography}} for {{Developers}}},
+  author = {Hekkala, Julius and Muurman, Mari and Halunen, Kimmo and Vallivaara, Visa},
+  date = {2023-04},
+  journaltitle = {SN COMPUT. SCI.},
+  volume = {4},
+  number = {4},
+  pages = {365},
+  issn = {2661-8907},
+  doi = {10.1007/s42979-023-01724-1},
+  url = {https://doi.org/10.1007/s42979-023-01724-1},
+  urldate = {2023-08-18},
+  abstract = {Widely used public key cryptography is threatened by the development of quantum computers. Post-quantum algorithms have been designed for the purpose of protecting sensitive data against attacks with quantum computers. National Institute of Standards and Technology has recently reached the end of the third round of post-quantum standardization process and has published three digital signatures and one key encapsulation mechanism for standardization. Three of the chosen algorithms are based on lattices. When implementing complex cryptographic algorithms, developers commonly use cryptographic libraries in their solutions to avoid mistakes. However, most of the open-source cryptography libraries do not yet have post-quantum algorithms integrated in them. We chose a C++ cryptography library, Crypto++, and created a fork where we integrated four lattice-based post-quantum algorithms. We analyzed the challenges in the process as well as the performance, correctness and security of the implemented algorithms. The performance of the integrated algorithms was overall good, but the integration process had its challenges, many of which were caused by the mathematical complexity of lattice-based algorithms. Different open-source implementations of post-quantum algorithms will be essential to their easier use for developers. Usability of the implementations is also important to avoid possible mistakes when using the algorithms.},
+  langid = {english},
+  keywords = {C++,Lattice cryptography,Post-quantum cryptography,Programming library}
+}
+
+@article{kabanovPracticalCryptographicStrategies2018,
+  title = {Practical Cryptographic Strategies in the Post-Quantum Era},
+  author = {Kabanov, I. S. and Yunusov, R. R. and Kurochkin, Y. V. and Fedorov, A. K.},
+  date = {2018-02},
+  journaltitle = {AIP Conference Proceedings},
+  volume = {1936},
+  number = {1},
+  pages = {020021},
+  issn = {0094-243X},
+  doi = {10.1063/1.5025459},
+  url = {https://doi.org/10.1063/1.5025459},
+  urldate = {2023-08-18},
+  abstract = {Quantum key distribution technologies promise information-theoretic security and are currently being deployed in com-mercial applications. We review new frontiers in information security technologies in communications and distributed storage applications with the use of classical, quantum, hybrid classical-quantum, and post-quantum cryptography. We analyze the cur-rent state-of-the-art, critical characteristics, development trends, and limitations of these techniques for application in enterprise information protection systems. An approach concerning the selection of practical encryption technologies for enterprises with branched communication networks is discussed.}
+}
+
+@article{kaurAdaptabilityMachineLearning2021,
+  title = {Adaptability of {{Machine Learning}} in {{Cryptography}}},
+  author = {Kaur, Veerpal and Kaur, Gagandeep and {dhiman}, gamini and Bindal, Ruchika and Kumar, Mukul},
+  date = {2021-09},
+  journaltitle = {Solid State Technology},
+  volume = {63},
+  pages = {2874--2880},
+  abstract = {Making machines learn is the new trend of the era and hence the use of Machine Learning is taking its pace. From small businesses to renowned companies like Google, Microsoft, all are opting the new phase of the technology. The world is growing ghastly towards 5th Generation computing and to be into the present phenomenon of applications of Machine Learning, one must know the benefits of its usage. Machine Learning is capable of providing numerous techniques that can help business, health care, and many scientific projects. Besides these benefits, Machine Learning is a technology that can be incorporated into other technologies to get better results. Cryptography is the one among such fields where Machine Learning can do wonders. Recent studies have been focusing on various application areas of machine learning in cryptography and the study is still going on. This paper will be focusing on all the applications of machine learning techniques in cryptography to achieve optimal network security which is the top most concern for the today’s technical world. The paper also provides implications of machine learning in cryptanalysis for future reference.}
+}
+
+@inproceedings{khalidLatticebasedCryptographyIoT2019,
+  title = {Lattice-Based {{Cryptography}} for {{IoT}} in {{A Quantum World}}: {{Are We Ready}}?},
+  shorttitle = {Lattice-Based {{Cryptography}} for {{IoT}} in {{A Quantum World}}},
+  booktitle = {2019 {{IEEE}} 8th {{International Workshop}} on {{Advances}} in {{Sensors}} and {{Interfaces}} ({{IWASI}})},
+  author = {Khalid, Ayesha and McCarthy, Sarah and O’Neill, Maire and Liu, Weiqiang},
+  date = {2019-06},
+  pages = {194--199},
+  doi = {10.1109/IWASI.2019.8791343},
+  abstract = {The impending realization of scalable quantum computers has led to active research in Post Quantum Cryptography (PQC). The challenge is harder for embedded IoT (edge) devices, due to their pervasive diffusion in today's world as well as their stricter resources (tight area and energy budgets). Amongst various classes of quantum-resistant cryptography schemes, Lattice- based Cryptography (LBC) is emerging as one of the most viable, almost half of the `survivors' of second round of the NIST's PQC competition are lattice-based in construction. This paper surveys the practicality of deployment of these schemes. In this context, the state-of-the-art LBC implementations on the constrained devices (including low-power FPGAs and embedded microprocessors), leading in terms of low-power footprint, small area, compact bandwidth requirements and high performance is fairly evaluated and bench-marked. The work concludes by identifying a suite of some favorite LBC schemes in terms of various IoT critical performance bench-marks.},
+  keywords = {Bandwidth,Cryptography,Internet of Things,IoT security,Lattices,NIST,Post quantum cryptography,Quantum Safe cryptography}
+}
+
+@book{lamCryptographyComputationalNumber2001,
+  title = {Cryptography and {{Computational Number Theory}}},
+  editor = {Lam, Kwok-Yan and Shparlinski, Igor and Wang, Huaxiong and Xing, Chaoping},
+  date = {2001},
+  publisher = {{Birkhäuser}},
+  location = {{Basel}},
+  doi = {10.1007/978-3-0348-8295-8},
+  url = {https://link.springer.com/10.1007/978-3-0348-8295-8},
+  urldate = {2023-09-22},
+  isbn = {978-3-0348-9507-1 978-3-0348-8295-8},
+  langid = {english},
+  keywords = {computational number theory,Computer Science,cryptography,cryptosystems,information,number theory,theoretical computer science}
+}
+
+@book{lapierreIntroductionQuantumComputing2021,
+  title = {Introduction to {{Quantum Computing}}},
+  author = {LaPierre, Ray},
+  date = {2021},
+  series = {The {{Materials Research Society Series}}},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-030-69318-3},
+  url = {https://link.springer.com/10.1007/978-3-030-69318-3},
+  urldate = {2023-09-23},
+  isbn = {978-3-030-69317-6 978-3-030-69318-3},
+  langid = {english},
+  keywords = {platforms for quantum computing,quantum algorithms,quantum computing for engineers,quantum computing textbook,quantum error correction,quantum gates,quantum information processing,quantum information textbook,undergraduate quantum computing}
+}
+
+@article{lermanPowerAnalysisAttack2014,
+  title = {Power Analysis Attack: An Approach Based on Machine Learning},
+  shorttitle = {Power Analysis Attack},
+  author = {Lerman, Liran and Bontempi, Gianluca and Markowitch, Olivier},
+  date = {2014-01},
+  journaltitle = {International Journal of Applied Cryptography},
+  volume = {3},
+  number = {2},
+  pages = {97--115},
+  issn = {1753-0563},
+  doi = {10.1504/IJACT.2014.062722},
+  url = {https://www.inderscienceonline.com/doi/abs/10.1504/IJACT.2014.062722},
+  urldate = {2023-08-23},
+  abstract = {In cryptography, a side-channel attack is any attack based on the analysis of measurements related to the physical implementation of a cryptosystem. Nowadays, the possibility of collecting a large amount of observations paves the way to the adoption of machine learning techniques, i.e., techniques able to extract information and patterns from large datasets. The use of statistical techniques for side-channel attacks is not new. Techniques like the template attack have shown their effectiveness in recent years. However, these techniques rely on parametric assumptions and are often limited to small dimensionality settings, which limit their range of application. This paper explores the use of machine learning techniques to relax such assumptions and to deal with high dimensional feature vectors.},
+  keywords = {cryptanalysis,machine learning,side-channel attack,template attack}
+}
+
+@article{liuIoTNUMSEvaluatingNUMS2019,
+  title = {{{IoT-NUMS}}: {{Evaluating NUMS Elliptic Curve Cryptography}} for {{IoT Platforms}}},
+  shorttitle = {{{IoT-NUMS}}},
+  author = {Liu, Zhe and Seo, Hwajeong},
+  date = {2019-03},
+  journaltitle = {IEEE Transactions on Information Forensics and Security},
+  volume = {14},
+  number = {3},
+  pages = {720--729},
+  issn = {1556-6021},
+  doi = {10.1109/TIFS.2018.2856123},
+  abstract = {In 2015, NIST held a workshop calling for new candidates for the next generation of elliptic curves to replace the almost two-decade old NIST curves. Nothing Upon My Sleeves (NUMS) curves are among the potential candidates presented in the workshop. Here, we present the first implementation of the NUMS256, NUMS379, and NUMS384 curves on two types of embedded devices. The implementations, which exhibit regular, constant-time execution to protect against timing and simple side-channel attacks, set new speed records and advance the state-of-the-art of curve-based (without endomorphism) scalar multiplication on 8-bit AVR and 32-bit ARM11 microcontrollers. For example, our NUMS256 implementation computes a scalar multiplication in 1.4 million cycles on a low-power 32-bit ARM11 microcontroller using mixed C and assembly language. These results demonstrate the potential of deploying IoT-NUMS on constrained and low-power applications such as protocols for the Internet of Things.},
+  keywords = {ARM11,AVR ATmega,efficient software implementation,Elliptic curve cryptography,Elliptic curves,Internet of Things,NUMS curves,Program processors,Standards}
+}
+
+@article{malinaFeasibilityPostQuantumCryptography2018,
+  title = {On {{Feasibility}} of {{Post-Quantum Cryptography}} on {{Small Devices}}},
+  author = {Malina, Lukas and Popelova, Lucie and Dzurenda, Petr and Hajny, Jan and Martinasek, Zdenek},
+  date = {2018-01},
+  journaltitle = {IFAC-PapersOnLine},
+  series = {15th {{IFAC Conference}} on {{Programmable Devices}} and {{Embedded Systems PDeS}} 2018},
+  volume = {51},
+  number = {6},
+  pages = {462--467},
+  issn = {2405-8963},
+  doi = {10.1016/j.ifacol.2018.07.104},
+  url = {https://www.sciencedirect.com/science/article/pii/S2405896318308474},
+  urldate = {2023-08-23},
+  abstract = {In this work, we investigate the feasibility of post-quantum cryptography in small and constrained devices such as those used for mobile and Internet-of-Things networks. We describe our experimental post-quantum cryptography implementations on small devices with different platforms. Then, we present and compare the performance results of chosen post-quantum key exchange schemes and their message sizes on selected ARM devices. In addition, we discuss the perspective types of post-quantum cryptographic schemes for various IoT systems with different requirements.},
+  keywords = {Applied Cryptography,Constrained Devices,Efficient Evaluation,Embedded Systems,IoT Systems,Post-Quantum Cryptography,Security}
+}
+
+@report{ModuleLatticeBasedDigitalSignature2023,
+  title = {Module-{{Lattice-Based Digital Signature Standard}}},
+  date = {2023-08},
+  number = {Federal Information Processing Standard (FIPS) 204 (Draft)},
+  institution = {{U.S. Department of Commerce}},
+  doi = {10.6028/NIST.FIPS.204.ipd},
+  url = {https://csrc.nist.gov/pubs/fips/204/ipd},
+  urldate = {2023-09-29},
+  abstract = {Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed data can use a digital signature as evidence in demonstrating to a third party that the signature was, in fact, generated by the claimed signatory. This is known as non-repudiation since the signatory cannot easily repudiate the signature at a later time. This standard specifies ML-DSA, a set of algorithms that can be used to generate and verify digital signatures. ML-DSA is believed to be secure even against adversaries in possession of a large-scale quantum computer.},
+  langid = {english}
+}
+
+@report{ModuleLatticeBasedKeyEncapsulationMechanism2023,
+  title = {Module-{{Lattice-Based Key-Encapsulation Mechanism Standard}}},
+  date = {2023-08},
+  number = {Federal Information Processing Standard (FIPS) 203 (Draft)},
+  institution = {{U.S. Department of Commerce}},
+  doi = {10.6028/NIST.FIPS.203.ipd},
+  url = {https://csrc.nist.gov/pubs/fips/203/ipd},
+  urldate = {2023-09-29},
+  abstract = {A key-encapsulation mechanism (or KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to perform basic tasks in secure communications, such as encryption and authentication.This standard specifes a key-encapsulation mechanism called ML-KEM. The security of ML-KEM is related to the computational diffculty of the so-called Module Learning with Errors problem. At present, ML-KEM is believed to be secure even against adversaries who possess a quantum computer.This standard specifes three parameter sets for ML-KEM. In order of increasing security strength (and decreasing performance), these parameter sets are ML-KEM-512, ML-KEM-768, and ML-KEM-1024.},
+  langid = {english}
+}
+
+@article{NISTAnnouncesFirst2022,
+  title = {{{NIST Announces First Four Quantum-Resistant Cryptographic Algorithms}}},
+  date = {2022-07},
+  journaltitle = {NIST},
+  url = {https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms},
+  urldate = {2023-09-29},
+  abstract = {Federal agency reveals the first group of winners from its six-year competition.},
+  langid = {english}
+}
+
+@inproceedings{pcAnalysisPostQuantumCryptography2022,
+  title = {Analysis of {{Post-Quantum Cryptography}} for {{Internet}} of {{Things}}},
+  booktitle = {2022 6th {{International Conference}} on {{Intelligent Computing}} and {{Control Systems}} ({{ICICCS}})},
+  author = {P C, Sajimon and Jain, Kurunandan and Krishnan, Prabhakar},
+  date = {2022-05},
+  pages = {387--394},
+  doi = {10.1109/ICICCS53718.2022.9787987},
+  abstract = {Cryptographic algorithms are crucial for secure communication in the Internet of Things (IoT). Quantum computers threaten public key cryptography algorithms like RSA (Rivest, Shamir, Adleman) and Diffie-Hellman (DH) key exchange schemes, which are widely in use today. As cryptographic algorithms are the foundation of secure internet communication, the development of Quantum Key Distribution (QKD) and Post-Quantum Cryptography (PQC) is essential to protect transactions over the internet. However, solutions like Quantum Key Distribution require heavy infrastructure. So, it is not feasible for the Internet of Things with fewer resources in computing power and form factor. Post-Quantum Cryptography is helpful on these devices. But, it needs further developments and improvements. This paper analyzes cryptography algorithms and protocols of IoT with different categories. Integrated PQC of National Institute of Standards and Technology (NIST) third level finalists on Raspberry Pi 4 (RPI4) board with Linux operating system. The performance of Post-Quantum Cryptography schemes for IoT has been evaluated. Finally, a Post-Quantum Cryptography scheme has been suggested for the Internet of Things based on the performance analysis.},
+  keywords = {Computers,Cryptography,Internet of Things (IoT),NIST,Post-Quantum Cryptography (PQC),Protocols,Public key cryptography,Quantum computing,Quantum Computing,Quantum key distribution,Quantum resistant,Quantum safe,Resistance}
+}
+
+@article{pirandolaAdvancesQuantumCryptography2020,
+  title = {Advances in Quantum Cryptography},
+  author = {Pirandola, S. and Andersen, U. L. and Banchi, L. and Berta, M. and Bunandar, D. and Colbeck, R. and Englund, D. and Gehring, T. and Lupo, C. and Ottaviani, C. and Pereira, J. L. and Razavi, M. and Shaari, J. Shamsul and Tomamichel, M. and Usenko, V. C. and Vallone, G. and Villoresi, P. and Wallden, P.},
+  date = {2020-12},
+  journaltitle = {Adv. Opt. Photon., AOP},
+  volume = {12},
+  number = {4},
+  pages = {1012--1236},
+  issn = {1943-8206},
+  doi = {10.1364/AOP.361502},
+  url = {https://opg.optica.org/aop/abstract.cfm?uri=aop-12-4-1012},
+  urldate = {2023-08-18},
+  abstract = {Quantum cryptography is arguably the fastest growing area in quantum information science. Novel theoretical protocols are designed on a regular basis, security proofs are constantly improving, and experiments are gradually moving from proof-of-principle lab demonstrations to in-field implementations and technological prototypes. In this paper, we provide both a general introduction and a state-of-the-art description of the recent advances in the field, both theoretical and experimental. We start by reviewing protocols of quantum key distribution based on discrete variable systems. Next we consider aspects of device independence, satellite challenges, and protocols based on continuous-variable systems. We will then discuss the ultimate limits of point-to-point private communications and how quantum repeaters and networks may overcome these restrictions. Finally, we will discuss some aspects of quantum cryptography beyond standard quantum key distribution, including quantum random number generators and quantum digital signatures.},
+  langid = {english},
+  keywords = {Dense wavelength division multiplexing,Entanglement distribution,Periodically poled lithium niobate,Quantum communications,Quantum cryptography,Quantum light sources}
+}
+
+@article{portmannSecurityQuantumCryptography2022,
+  title = {Security in Quantum Cryptography},
+  author = {Portmann, Christopher and Renner, Renato},
+  date = {2022-06},
+  journaltitle = {Rev. Mod. Phys.},
+  volume = {94},
+  number = {2},
+  pages = {025008},
+  doi = {10.1103/RevModPhys.94.025008},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.94.025008},
+  urldate = {2023-08-18},
+  abstract = {Quantum cryptography exploits principles of quantum physics for the secure processing of information. A prominent example is secure communication, i.e., the task of transmitting confidential messages from one location to another. The cryptographic requirement here is that the transmitted messages remain inaccessible to anyone other than the designated recipients, even if the communication channel is untrustworthy. In classical cryptography, this can usually be guaranteed only under computational hardness assumptions, such as when factoring large integers is infeasible. In contrast, the security of quantum cryptography relies entirely on the laws of quantum mechanics. Here this physical notion of security is reviewed, with a focus on quantum key distribution and secure communication.}
+}
+
+@report{PublicKeyPostQuantumCryptographic2016,
+  title = {Public-{{Key Post-Quantum Cryptographic Algorithms}}: {{Nominations}} \textbackslash textbar {{CSRC}}},
+  shorttitle = {Public-{{Key Post-Quantum Cryptographic Algorithms}}},
+  date = {2016-12},
+  institution = {{National Institute for Standards in Technology}},
+  url = {https://csrc.nist.gov/news/2016/public-key-post-quantum-cryptographic-algorithms},
+  urldate = {2023-09-29},
+  abstract = {NIST solicits nominations for candidate algorithms to be considered for public-key post-quantum standards. Submission requirements and evaluation criteria are available at https://www.nist.gov/pqcrypto. Proposals must be received by November 30, 2017.},
+  langid = {american}
+}
+
+@inproceedings{ristovQuantumResilientPublic2023,
+  title = {Quantum {{Resilient Public Key Cryptography}} in {{Internet}} of {{Things}}},
+  booktitle = {2023 12th {{Mediterranean Conference}} on {{Embedded Computing}} ({{MECO}})},
+  author = {Ristov, Riste and Koceski, Saso},
+  date = {2023-06},
+  pages = {1--4},
+  doi = {10.1109/MECO58584.2023.10154994},
+  abstract = {With Internet of Things (IoT) becoming increasingly popular and widespread, the somewhat secure devices could potentially become completely insecure with the emergence of quantum computers. The problem is that a lot of IoT devices in crucial places are not secured and use unencrypted communication or use the current recommended encryption algorithms. This paper explores public key encryption (PKE) with post quantum cryptography (PQC) algorithm Kyber, despite it being usually used as key-encapsulation mechanism (KEM). The proposed approach has been evaluated experimentally. The conducted experiment encrypts the data on one scenario on the IoT device itself and in the other scenario the data is encrypted on a fog node. Obtained results are promising and suggest that quantum resilient public key cryptography is applicable in internet of things.},
+  keywords = {Computers,Hardware,Internet of Things,public key cryptography,Public key cryptography,quantum computers,Quantum computing,RTOS,Software,Software algorithms,Standardization}
+}
+
+@inproceedings{rivestCryptographyMachineLearning1993,
+  title = {Cryptography and Machine Learning},
+  booktitle = {Advances in {{Cryptology}} — {{ASIACRYPT}} '91},
+  author = {Rivest, Ronald L.},
+  editor = {Imai, Hideki and Rivest, Ronald L. and Matsumoto, Tsutomu},
+  date = {1993},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {427--439},
+  publisher = {{Springer}},
+  location = {{Berlin, Heidelberg}},
+  doi = {10.1007/3-540-57332-1_36},
+  abstract = {This paper gives a survey of the relationship between the fields of cryptography and machine learning, with an emphasis on how each field has contributed ideas and techniques to the other. Some suggested directions for future cross-fertilization are also proposed.},
+  isbn = {978-3-540-48066-2},
+  langid = {english},
+  keywords = {Boolean Formula,Disjunctive Normal Form,Equivalence Query,Machine Learning,Membership Query}
+}
+
+@inproceedings{roettelerQuantumResourceEstimates2017,
+  title = {Quantum {{Resource Estimates}} for {{Computing Elliptic Curve Discrete Logarithms}}},
+  booktitle = {Advances in {{Cryptology}} – {{ASIACRYPT}} 2017},
+  author = {Roetteler, Martin and Naehrig, Michael and Svore, Krysta M. and Lauter, Kristin},
+  editor = {Takagi, Tsuyoshi and Peyrin, Thomas},
+  date = {2017},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {241--270},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-70697-9_9},
+  abstract = {We give precise quantum resource estimates for Shor’s algorithm to compute discrete logarithms on elliptic curves over prime fields. The estimates are derived from a simulation of a Toffoli gate network for controlled elliptic curve point addition, implemented within the framework of the quantum computing software tool suite LIQ\textbackslash Ui\textbackslash textbar\textbackslash textbackslashrangle \textbackslash Ui\textbackslash textbar⟩. We determine circuit implementations for reversible modular arithmetic, including modular addition, multiplication and inversion, as well as reversible elliptic curve point addition. We conclude that elliptic curve discrete logarithms on an elliptic curve defined over an n-bit prime field can be computed on a quantum computer with at most \textbackslash 9n + 2\textbackslash textbackslashlceil \textbackslash textbackslashlog \_2(n)\textbackslash textbackslashrceil +10\textbackslash 9n+2⌈log2(n)⌉+10qubits using a quantum circuit of at most \textbackslash 448 nˆ3 \textbackslash textbackslashlog \_2(n) + 4090 nˆ3\textbackslash 448n3log2(n)+4090n3Toffoli gates. We are able to classically simulate the Toffoli networks corresponding to the controlled elliptic curve point addition as the core piece of Shor’s algorithm for the NIST standard curves P-192, P-224, P-256, P-384 and P-521. Our approach allows gate-level comparisons to recent resource estimates for Shor’s factoring algorithm. The results also support estimates given earlier by Proos and Zalka and indicate that, for current parameters at comparable classical security levels, the number of qubits required to tackle elliptic curves is less than for attacking RSA, suggesting that indeed ECC is an easier target than RSA.},
+  isbn = {978-3-319-70697-9},
+  langid = {english},
+  keywords = {Elliptic curve cryptography,Elliptic curve discrete logarithm problem,Quantum cryptanalysis}
+}
+
+@inproceedings{routrayQuantumCryptographyIoT2017,
+  title = {Quantum Cryptography for {{IoT}}: {{APerspective}}},
+  shorttitle = {Quantum Cryptography for {{IoT}}},
+  booktitle = {2017 {{International Conference}} on {{IoT}} and {{Application}} ({{ICIOT}})},
+  author = {Routray, Sudhir K. and Jha, Mahesh K. and Sharma, Laxmi and Nyamangoudar, Rahul and Javali, Abhishek and Sarkar, Sutapa},
+  date = {2017-05},
+  pages = {1--4},
+  doi = {10.1109/ICIOTA.2017.8073638},
+  abstract = {Internet of things (IoT) is going to be an integral part of our lives in the next few years. It will be found as direct service provider in our surroundings through the connected sensor based networks. Even indirectly, it will serve us in several forms as value added services over the cellular platforms. However, it is very much vulnerable from several security threats. The current security level is not very strong for the future applications of IoT. There is a need of a robust cryptosystem for IoT. In this article, we propose quantum cryptography as a security solution for IoT in the long term. We explain the motivation behind this idea and the potential applications in IoT in the near future.},
+  keywords = {cryptography for IoT,Internet of things,Photonics,Polarization,Protocols,Quantum computing,quantum cryptography,Quantum cryptography,quantum cryptography for IoT,security for IoT}
+}
+
+@book{schneierAppliedCryptographyProtocols1996,
+  title = {Applied {{Cryptography}}: {{Protocols}}, {{Algorithms}}, and {{Source Code}} in {{C}}},
+  shorttitle = {Applied {{Cryptography}}},
+  author = {Schneier, Bruce},
+  date = {1996-10},
+  edition = {2nd edition},
+  publisher = {{Wiley}},
+  location = {{New York}},
+  abstract = {". . .the best introduction to cryptography I've ever seen. . . .The book the National Security Agency wanted never to be published. . . ." -Wired Magazine ". . .monumental . . . fascinating . . . comprehensive . . . the definitive work on cryptography for computer programmers . . ." -Dr. Dobb's Journal ". . .easily ranks as one of the most authoritative in its field." -PC Magazine ". . .the bible of code hackers." -The Millennium Whole Earth Catalog This new edition of the cryptography classic provides you with a comprehensive survey of modern cryptography. The book details how programmers and electronic communications professionals can use cryptography-the technique of enciphering and deciphering messages-to maintain the privacy of computer data. It describes dozens of cryptography algorithms, gives practical advice on how to implement them into cryptographic software, and shows how they can be used to solve security problems. Covering the latest developments in practical cryptographic techniques, this new edition shows programmers who design computer applications, networks, and storage systems how they can build security into their software and systems. What's new in the Second Edition? * New information on the Clipper Chip, including ways to defeat the key escrow mechanism * New encryption algorithms, including algorithms from the former Soviet Union and South Africa, and the RC4 stream cipher * The latest protocols for digital signatures, authentication, secure elections, digital cash, and more * More detailed information on key management and cryptographic implementations},
+  isbn = {978-0-471-11709-4},
+  langid = {english}
+}
+
+@inproceedings{schoffelEnergyCostsPostQuantum2021,
+  title = {On the {{Energy Costs}} of {{Post-Quantum KEMs}} in {{TLS-based Low-Power Secure IoT}}},
+  booktitle = {Proceedings of the {{International Conference}} on {{Internet-of-Things Design}} and {{Implementation}}},
+  author = {Schöffel, Maximilian and Lauer, Frederik and Rheinländer, Carl C. and Wehn, Norbert},
+  date = {2021-05},
+  series = {{{IoTDI}} '21},
+  pages = {158--168},
+  publisher = {{Association for Computing Machinery}},
+  location = {{New York, NY, USA}},
+  doi = {10.1145/3450268.3453528},
+  url = {https://dl.acm.org/doi/10.1145/3450268.3453528},
+  urldate = {2023-08-18},
+  abstract = {Recent achievements in designing quantum computers place a serious threat on the security of state-of-the-art public key cryptography and on all communication that relies on it. Meanwhile, security is seen as one of the most critical issues of low-power IoT devices even with pre-quantum public key cryptography since IoT devices have strict energy constraints and limited computational power. Thus, state-of-the-art dedicated hardware accelerators have been deployed to facilitate secure and confidential communication with well established protocols on such devices. It is common belief that the complexity of the cryptographic computations are also the bottleneck of the new, quantum-resistant algorithms and that hardware accelerators are necessary to use them efficiently on energy constrained embedded devices. In this paper, we carried out an in-depth investigation of the application of potential Post-Quantum Cryptography algorithms, which were proposed in the associated US NIST process, to a representative TLS-based low-power IoT infrastructure. First, we show that the main contributor to the TLS handshake latency are the higher bandwidth requirements of post-quantum Key-Encapsulation Mechanisms rather than the cryptographic computations itself. Second, from the perspective of crypto-agility we show that edge devices with code-based, isogeny-based as well as lattice-based algorithms have low energy consumption, which enables long battery run times in typical IoT scenarios without dedicated hardware accelerators. Third, we increase the level of security further by combining pre-quantum and post-quantum algorithms to a hybrid key exchange, and quantify the overhead in energy consumption and latency of it.},
+  isbn = {978-1-4503-8354-7},
+  keywords = {Key-Encapsulation Mechanisms,low-power secure IoT,Post-Quantum Cryptography}
+}
+
+@article{seyhanLatticebasedCryptosystemsSecurity2022,
+  title = {Lattice-Based Cryptosystems for the Security of Resource-Constrained {{IoT}} Devices in Post-Quantum World: A Survey},
+  shorttitle = {Lattice-Based Cryptosystems for the Security of Resource-Constrained {{IoT}} Devices in Post-Quantum World},
+  author = {Seyhan, Kübra and Nguyen, Tu N. and Akleylek, Sedat and Cengiz, Korhan},
+  date = {2022-06},
+  journaltitle = {Cluster Comput},
+  volume = {25},
+  number = {3},
+  pages = {1729--1748},
+  issn = {1573-7543},
+  doi = {10.1007/s10586-021-03380-7},
+  url = {https://doi.org/10.1007/s10586-021-03380-7},
+  urldate = {2023-08-18},
+  abstract = {The concept of the Internet of Things (IoT) arises due to the change in the characteristics and numbers of smart devices. Communication of things makes it important to ensure security in this interactive architecture. One of the developments that are subject to change in IoT environments is post-quantum cryptography. This evolution, which includes the change of asymmetric cryptosystems, affects the security of IoT devices. In this paper, fundamental characteristics and layered architecture of IoT environments are examined. Basic security requirements and solution technologies for IoT architecture are remembered. Some important open problems in the literature for IoT device security are recalled. From these open problems, the post-quantum security of IoT devices with limited resources is focused. The main purpose of this paper is to improve the constrained resource classification and give a point of view for post-quantum IoT security. In this context, a sensitive classification is proposed by improving the limited resource classification of IETF. The cryptosystem efficiency definition is made for the analysis of resource-constrained device security. Using the proposed classification and efficiency definition, the usage of lattice-based cryptosystems in resource-constrained IoT device security is analyzed.},
+  langid = {english},
+  keywords = {IoT,Lattice-based cryptography,Post-quantum cryptography,Resource-constrained device}
+}
+
+@article{shorPolynomialTimeAlgorithmsPrime1997,
+  title = {Polynomial-{{Time Algorithms}} for {{Prime Factorization}} and {{Discrete Logarithms}} on a {{Quantum Computer}}},
+  author = {Shor, Peter W.},
+  date = {1997-10},
+  journaltitle = {SIAM J. Comput.},
+  volume = {26},
+  number = {5},
+  pages = {1484--1509},
+  issn = {0097-5397},
+  doi = {10.1137/S0097539795293172},
+  url = {https://epubs.siam.org/doi/10.1137/S0097539795293172},
+  urldate = {2023-08-18},
+  abstract = {In this paper we study quantum computation from a complexity theoretic viewpoint. Our first result is the existence of an efficient universal quantum Turing machine in Deutsch's model of a quantum Turing machine (QTM) [Proc. Roy. Soc. London Ser. A, 400 (1985), pp. 97–117]. This construction is substantially more complicated than the corresponding construction for classical Turing machines (TMs); in fact, even simple primitives such as looping, branching, and composition are not straightforward in the context of quantum Turing machines. We establish how these familiar primitives can be implemented and introduce some new, purely quantum mechanical primitives, such as changing the computational basis and carrying out an arbitrary unitary transformation of polynomially bounded dimension.We also consider the precision to which the transition amplitudes of a quantum Turing machine need to be specified. We prove that \textbackslash O(\textbackslash textbackslashlog T)\textbackslash{} bits of precision suffice to support a T step computation. This justifies the claim that the quantum Turing machine model should be regarded as a discrete model of computation and not an analog one. We give the first formal evidence that quantum Turing machines violate the modern (complexity theoretic) formulation of the Church–Turing thesis. We show the existence of a problem, relative to an oracle, that can be solved in polynomial time on a quantum Turing machine, but requires superpolynomial time on a bounded-error probabilistic Turing machine, and thus not in the class \{\textbackslash textbackslashBPP\textbackslash. The class \{\textbackslash textbackslashBQP\textbackslash{} of languages that are efficiently decidable (with small error-probability) on a quantum Turing machine satisfies \{\textbackslash textbackslashBPP \textbackslash textbackslashsubseteq \textbackslash textbackslashBQP \textbackslash textbackslashsubseteq \textbackslash textbackslashPtimeˆ\{\textbackslash textbackslashSP\}\textbackslash. Therefore, there is no possibility of giving a mathematical proof that quantum Turing machines are more powerful than classical probabilistic Turing machines (in the unrelativized setting) unless there is a major breakthrough in complexity theory.\vphantom{\}\}\}}}
+}
+
+@article{singhAdvancedLightweightEncryption2017,
+  title = {Advanced Lightweight Encryption Algorithms for {{IoT}} Devices: Survey, Challenges and Solutions},
+  shorttitle = {Advanced Lightweight Encryption Algorithms for {{IoT}} Devices},
+  author = {Singh, Saurabh and Sharma, Pradip Kumar and Moon, Seo Yeon and Park, Jong Hyuk},
+  date = {2017-05},
+  journaltitle = {J Ambient Intell Human Comput},
+  issn = {1868-5145},
+  doi = {10.1007/s12652-017-0494-4},
+  url = {https://doi.org/10.1007/s12652-017-0494-4},
+  urldate = {2023-08-18},
+  abstract = {There are many emerging areas in which highly constrained devices are interconnected and communicated to accomplish some tasks. Nowadays, Internet of Things (IoT) enables many low resources and constrained devices to communicate, compute process and make decision in the communication network. In the heterogeneous environments for IoT, there are many challenges and issues like power consumption of devices, limited battery, memory space, performance cost, and security in the Information Communication Technology (ICT) network. In this paper, we discuss a state-of-art of lightweight cryptographic primitives which include lightweight block ciphers, hash function, stream ciphers, high performance system, and low resources device for IoT environment in details. We analyze many lightweight cryptographic algorithms based on their key size, block size, number of rounds, and structures. In addition, we discuss the security architecture in IoT for constrained device environment, and focus on research challenges, issues and solutions. Finally, a proposed security scheme with a service scenario for an improvement of resource constrained IoT environment and open issues are discussed.},
+  langid = {english},
+  keywords = {Constrained devices,Internet-of-things,Lightweight cryptography,Symmetric algorithms}
+}
+
+@inproceedings{sooksatraReviewMachineLearning2020,
+  title = {A {{Review}} of {{Machine Learning}} and {{Cryptography Applications}}},
+  booktitle = {2020 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})},
+  author = {Sooksatra, Korn and Rivas, Pablo},
+  date = {2020-12},
+  pages = {591--597},
+  doi = {10.1109/CSCI51800.2020.00105},
+  abstract = {Adversarially robust neural cryptography deals with the training of a neural-based model using an adversary to leverage the learning process in favor of reliability and trustworthiness. The adversary can be a neural network or a strategy guided by a neural network. These mechanisms are proving successful in finding secure means of data protection. Similarly, machine learning benefits significantly from the cryptography area by protecting models from being accessible to malicious users. This paper is a literature review on the symbiotic relationship between machine learning and cryptography. We explain cryptographic algorithms that have been successfully applied in machine learning problems and, also, deep learning algorithms that have been used in cryptography. We pay special attention to the exciting and relatively new area of adversarial robustness.},
+  keywords = {adversarial robustness,block ciphers,deep learning,Deep learning,generative adversarial networks,Machine learning algorithms,neural cryptography,Neural networks,Robustness,Scientific computing,Symbiosis,Training}
+}
+
+@report{StatelessHashBasedDigital2023,
+  title = {Stateless {{Hash-Based Digital Signature Standard}}},
+  date = {2023-08},
+  number = {Federal Information Processing Standard (FIPS) 205 (Draft)},
+  institution = {{U.S. Department of Commerce}},
+  doi = {10.6028/NIST.FIPS.205.ipd},
+  url = {https://csrc.nist.gov/pubs/fips/205/ipd},
+  urldate = {2023-09-29},
+  abstract = {This standard specifies the stateless hash-based digital signature algorithm (SLH-DSA). Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed data can use a digital signature as evidence in demonstrating to a third party that the signature was, in fact, generated by the claimed signatory. This is known as non-repudiation since the signatory cannot easily repudiate the signature at a later time. SLH-DSA is based on SPHINCS+, which was selected for standardization as part of the NIST Post-Quantum Cryptography Standardization process.},
+  langid = {english}
+}
+
+@misc{taranBridgingMachineLearning2018,
+  title = {Bridging Machine Learning and Cryptography in Defence against Adversarial Attacks},
+  author = {Taran, Olga and Rezaeifar, Shideh and Voloshynovskiy, Slava},
+  date = {2018-09},
+  doi = {10.48550/arXiv.1809.01715},
+  url = {http://arxiv.org/abs/1809.01715},
+  urldate = {2023-08-23},
+  abstract = {In the last decade, deep learning algorithms have become very popular thanks to the achieved performance in many machine learning and computer vision tasks. However, most of the deep learning architectures are vulnerable to so called adversarial examples. This questions the security of deep neural networks (DNN) for many security- and trust-sensitive domains. The majority of the proposed existing adversarial attacks are based on the differentiability of the DNN cost function.Defence strategies are mostly based on machine learning and signal processing principles that either try to detect-reject or filter out the adversarial perturbations and completely neglect the classical cryptographic component in the defence. In this work, we propose a new defence mechanism based on the second Kerckhoffs's cryptographic principle which states that the defence and classification algorithm are supposed to be known, but not the key. To be compliant with the assumption that the attacker does not have access to the secret key, we will primarily focus on a gray-box scenario and do not address a white-box one. More particularly, we assume that the attacker does not have direct access to the secret block, but (a) he completely knows the system architecture, (b) he has access to the data used for training and testing and (c) he can observe the output of the classifier for each given input. We show empirically that our system is efficient against most famous state-of-the-art attacks in black-box and gray-box scenarios.},
+  organization = {{arXiv}},
+  keywords = {Computer Science - Cryptography and Security,Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
+@report{ThreeDraftFIPS2023,
+  title = {Three {{Draft FIPS}} for {{Post-Quantum Cryptography}} \textbackslash textbar {{CSRC}}},
+  date = {2023-08},
+  institution = {{National Institute for Standards in Technology}},
+  url = {https://csrc.nist.gov/News/2023/three-draft-fips-for-post-quantum-cryptography},
+  urldate = {2023-09-29},
+  abstract = {NIST requests comments on the initial public drafts of three Federal Information Processing Standards (FIPS) - FIPS 203, 204 and 205. The deadline to submit comments is November 22, 2023.},
+  langid = {american}
+}
+
+@article{tiwariNovelMethodDNABased2018,
+  title = {Novel {{Method}} for {{DNA-Based Elliptic Curve Cryptography}} for {{IoT Devices}}},
+  author = {Tiwari, Harsh Durga and Kim, Jae Hyung},
+  date = {2018},
+  journaltitle = {ETRI Journal},
+  volume = {40},
+  number = {3},
+  pages = {396--409},
+  issn = {2233-7326},
+  doi = {10.4218/etrij.2017-0220},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.4218/etrij.2017-0220},
+  urldate = {2023-08-18},
+  abstract = {Elliptic curve cryptography (ECC) can achieve relatively good security with a smaller key length, making it suitable for Internet of Things (IoT) devices. DNA-based encryption has also been proven to have good security. To develop a more secure and stable cryptography technique, we propose a new hybrid DNA-encoded ECC scheme that provides multilevel security. The DNA sequence is selected, and using a sorting algorithm, a unique set of nucleotide groups is assigned. These are directly converted to binary sequence and then encrypted using the ECC; thus giving double-fold security. Using several examples, this paper shows how this complete method can be realized on IoT devices. To verify the performance, we implement the complete system on the embedded platform of a Raspberry Pi 3 board, and utilize an active sensor data input to calculate the time and energy required for different data vector sizes. Connectivity and resilience analysis prove that DNA-mapped ECC can provide better security compared to ECC alone. The proposed method shows good potential for upcoming IoT technologies that require a smaller but effective security system.},
+  langid = {english},
+  keywords = {Deoxyribonucleic acid (DNA),Elliptic curve cryptography (ECC),IoT security,Kobliz's algorithm,Nucleotide,Public key cryptography,Rivest,Shamir and Adleman (RSA)}
+}
+
+@misc{usmanLightweightEncryptionLow2020,
+  title = {Lightweight {{Encryption}} for the {{Low Powered IoT Devices}}},
+  author = {Usman, Muhammad},
+  date = {2020-12},
+  doi = {10.48550/arXiv.2012.00193},
+  url = {http://arxiv.org/abs/2012.00193},
+  urldate = {2023-08-18},
+  abstract = {The internet of things refers to the network of devices connected to the internet and can communicate with each other. The term things is to refer non-conventional devices that are usually not connected to the internet. The network of such devices or things is growing at an enormous rate. The security and privacy of the data flowing through these things is a major concern. The devices are low powered and the conventional encryption algorithms are not suitable to be employed on these devices. In this correspondence a survey of the contemporary lightweight encryption algorithms suitable for use in the IoT environment has been presented.},
+  organization = {{arXiv}},
+  keywords = {Computer Science - Computational Complexity,Computer Science - Cryptography and Security}
+}
+
+@unpublished{vaikuntanathanAdvancedTopicsCryptography2015,
+  title = {Advanced {{Topics}} in {{Cryptography}}: {{Lattices}}},
+  author = {Vaikuntanathan, Vinod},
+  date = {2015-10},
+  location = {{Massachusetts Institute of Technology}},
+  abstract = {Last class we showed the NP-hardness of the Closest Vector Problem (CVP). Today, we discuss the NP-hardness of the Shortest Vector Problem (SVP) and its gap version, GapSVP.},
+  howpublished = {Lecture}
+}
+
+@report{westerbaanX25519Kyber768Draft00HybridPostquantum2023,
+  type = {Internet Draft},
+  title = {{{X25519Kyber768Draft00}} Hybrid Post-Quantum Key Agreement},
+  author = {Westerbaan, Bas and Stebila, Douglas},
+  date = {2023-03},
+  number = {draft-tls-westerbaan-xyber768d00-02},
+  institution = {{Internet Engineering Task Force}},
+  url = {https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00-02},
+  urldate = {2023-08-23},
+  abstract = {This memo defines X25519Kyber768Draft00, a hybrid post-quantum key exchange for TLS 1.3.}
+}
+
+@article{yiMachineLearningMethod2023,
+  title = {Machine {{Learning Method}} with {{Applications}} in {{Hardware Security}} of {{Post-Quantum Cryptography}}},
+  author = {Yi, Haibo},
+  date = {2023-03},
+  journaltitle = {J Grid Computing},
+  volume = {21},
+  number = {2},
+  pages = {19},
+  issn = {1572-9184},
+  doi = {10.1007/s10723-023-09643-4},
+  url = {https://doi.org/10.1007/s10723-023-09643-4},
+  urldate = {2023-08-23},
+  abstract = {Machine learning (ML) is the core of Artificial Intelligence (AI), and it is the fundamental way to make computer have intelligence. ML is a technology that uses algorithms to parse data, constantly learn, and make judgements and predictions about what happens. With the continuous development of ML technology, using ML algorithms to analyze the security of physical hardware has gradually become one of the hot spots in the research field. In the field of hardware security, post quantum cryptography is one of the research hotspots, e.g., multivariate cryptography. However, analyzing post-quantum signatures based on ML is still in the early stage. As substitutions of current used signatures, post-quantum signatures should fully consider side channel attack based on ML techniques so that they can be used in reality. In order to address such challenges, we present ML techniques to exploit the measurement of side channel attacks to post-quantum signatures. We propose a ML model for the measurement of side channel attacks. The efficiency of the proposed model is measured and it can be extended to analyze other similar signatures.},
+  langid = {english},
+  keywords = {Artificial intelligence (AI),Hardware security,Machine learning (ML),Post-quantum cryptography,Side channel attack}
+}
+
+@inproceedings{younanQuantumChainThings2021,
+  title = {Quantum {{Chain}} of {{Things}} ({{QCoT}}): {{A New Paradigm}} for {{Integrating Quantum Computing}}, {{Blockchain}}, and {{Internet}} of {{Things}}},
+  shorttitle = {Quantum {{Chain}} of {{Things}} ({{QCoT}})},
+  booktitle = {2021 17th {{International Computer Engineering Conference}} ({{ICENCO}})},
+  author = {Younan, Mina and Elhoseny, Mohamed and Ali, Abdelmgeid A. and Houssein, Essam H.},
+  date = {2021-12},
+  pages = {101--106},
+  doi = {10.1109/ICENCO49852.2021.9698947},
+  abstract = {Recently, Internet of Things (IoT) and Blockchain (BC) are coupled to present smart and secure applications. Quantum Computing (QC) is a new paradigm that imposes itself as a main technology in the near future, especially in the 6G era, due to its powerful computations. As a result, immigration of the IoT and BC to the QC has to be studied and prepared. This paper provides a brief review of relevant recent work to identify opportunities for optimal integration. Besides, a new paradigm called Quantum Chain of Things (QCoT) is proposed and its perspective architecture is presented and verified into two parts: (a) BC-IoT using Arduino, and (b) QC-IoT using IBM Qiskit simulator. Finally, presented knowledge such as current challenges, threads, and integration opportunities could help researchers to investigate new trends and future directions.},
+  keywords = {6G mobile communication,Big Data,Blockchain,Blockchains,Computer architecture,Fog Computing,Instruction sets,Internet of Things,Internet of Things (IoT),Market research,Post-quantum,Quantum computing,Quantum Computing,Security}
+}

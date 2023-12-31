@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "d27568210b6299b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c4f890d85569976",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e96753454852697",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0073de86f7135f80",
+    "type": "split",
+    "children": [
+      {
+        "id": "509fe4da99e1c987",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "027570f67f8c185c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5ab1bdf45ef5c938",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0b856f8bde012d18",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f64a56da8d3f8138",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a0ab4f5ca0e17fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69a220d1bf9c23ac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "182dda8fe5b13157",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f952114344b2a495",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3bdad0bd8acff585",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0e96753454852697",
+  "lastOpenFiles": [
+    "experiment/binaries/encrypted_file.bin",
+    "experiment/binaries/1gb_test",
+    "experiment/CMakeFiles/Progress/6",
+    "experiment/CMakeFiles/kyberKEM.dir/source/kyberKEM.cpp.o",
+    "experiment/CMakeFiles/Progress/5",
+    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.internal.tmp04739",
+    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.make.tmp0163a",
+    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.internal.tmp5aeb2",
+    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.make.tmp6c5e1",
+    "experiment/CMakeFiles/Progress/10",
+    "experiment/CMakeFiles/Progress/9",
+    "experiment/source/kyber/subtle/README.md",
+    "experiment/source/kyber/sha3/README.md",
+    "experiment/source/kyber/dudect/README.md",
+    "experiment/source/kyber/README.md"
+  ]
+}

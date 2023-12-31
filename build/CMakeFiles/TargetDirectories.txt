@@ -1,0 +1,6 @@
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/payload.dir
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/benchmark.dir
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/eccKEM.dir
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/kyberKEM.dir
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/arnab/Desktop/pqcbench/build/CMakeFiles/rebuild_cache.dir

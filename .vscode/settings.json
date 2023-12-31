@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "array": "cpp"
+    },
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file"
+        }
+    ],
+    "cmake.sourceDirectory": "/mnt/c/Users/arnab/Desktop/pqcbench/experiment"
+}

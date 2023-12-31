@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/mnt/c/Users/arnab/Desktop/pqcbench/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/sha3/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/subtle/include -g -std=gnu++20 -o CMakeFiles/payload.dir/source/payload.cpp.o -c /mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/payload.cpp",
+  "file": "/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/payload.cpp"
+},
+{
+  "directory": "/mnt/c/Users/arnab/Desktop/pqcbench/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/sha3/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/subtle/include -g -std=gnu++20 -o CMakeFiles/benchmark.dir/source/benchmark.cpp.o -c /mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/benchmark.cpp",
+  "file": "/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/benchmark.cpp"
+},
+{
+  "directory": "/mnt/c/Users/arnab/Desktop/pqcbench/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/sha3/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/subtle/include -g -std=gnu++20 -o CMakeFiles/eccKEM.dir/source/eccKEM.cpp.o -c /mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/eccKEM.cpp",
+  "file": "/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/eccKEM.cpp"
+},
+{
+  "directory": "/mnt/c/Users/arnab/Desktop/pqcbench/build",
+  "command": "/usr/bin/g++  -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/sha3/include -I/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyber/subtle/include -g -std=gnu++20 -o CMakeFiles/kyberKEM.dir/source/kyberKEM.cpp.o -c /mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyberKEM.cpp",
+  "file": "/mnt/c/Users/arnab/Desktop/pqcbench/experiment/source/kyberKEM.cpp"
+}
+]

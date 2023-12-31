@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: bibliography.bib
+Warning--I didn't find a database entry for "lam_cryptography_2001"
+Warning--I didn't find a database entry for "schneier_applied_1996"
+Warning--I didn't find a database entry for "dhillon_elliptic_2016"
+Warning--I didn't find a database entry for "tiwari_novel_2018"
+Warning--I didn't find a database entry for "lapierre_introduction_2021"
+Warning--I didn't find a database entry for "bub_quantum_2001"
+Warning--I didn't find a database entry for "shor_polynomial-time_1997"
+Warning--I didn't find a database entry for "roetteler_quantum_2017"
+Warning--I didn't find a database entry for "blanco-chacon_ring_2019"
+Warning--I didn't find a database entry for "pirandola_advances_2020"
+Warning--I didn't find a database entry for "vaikuntanathan_advanced_2015"
+Warning--I didn't find a database entry for "computer_security_division_post-quantum_2017"
+Warning--I didn't find a database entry for "noauthor_public-key_2016"
+Warning--I didn't find a database entry for "noauthor_three_2023"
+Warning--I didn't find a database entry for "noauthor_nist_2022"
+Warning--I didn't find a database entry for "noauthor_module-lattice-based_2023"
+Warning--I didn't find a database entry for "noauthor_module-lattice-based_2023-1"
+Warning--I didn't find a database entry for "noauthor_stateless_2023"
+Warning--I didn't find a database entry for "guillen_towards_2017"
+Warning--I didn't find a database entry for "p_c_analysis_2022"
+Warning--I didn't find a database entry for "schoffel_energy_2021"
+Warning--I didn't find a database entry for "akleylek_new_2022"
+Warning--I didn't find a database entry for "ristov_quantum_2023"
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 2 entries,
+            6399 wiz_defined-function locations,
+            1239 strings with 10611 characters,
+and the built_in function-call counts, 15340 in all, are:
+= -- 904
+> -- 967
+< -- 67
++ -- 1101
+- -- 786
+* -- 845
+:= -- 2349
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 9
+chr.to.int$ -- 92
+cite$ -- 2
+duplicate$ -- 1326
+empty$ -- 987
+format.name$ -- 92
+if$ -- 2457
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 0
+newline$ -- 76
+num.names$ -- 41
+pop$ -- 445
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 314
+stack$ -- 0
+substring$ -- 1716
+swap$ -- 262
+text.length$ -- 82
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 56
+warning$ -- 0
+while$ -- 265
+width$ -- 0
+write$ -- 75
+(There were 23 warnings)

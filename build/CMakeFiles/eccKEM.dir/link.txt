@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/eccKEM.dir/source/eccKEM.cpp.o -o binaries/eccKEM  /usr/lib/x86_64-linux-gnu/libcryptopp.so 
