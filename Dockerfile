@@ -17,3 +17,8 @@ RUN ./payload 0_5gb_test 500 && \
 ./payload 4gb_test 4000 && \
 ./payload 8gb_test 8000 && \
 ./payload 16gb_test 16000 && \
+
+FROM ubuntu as runtime
+COPY --from=build /app/binaries /binaries
+WORKDIR /binaries
+RUN 
