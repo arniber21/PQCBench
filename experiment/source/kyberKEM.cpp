@@ -45,7 +45,9 @@ void decrypt_chunk(std::ifstream& encrypted_input_file, std::ofstream& decrypted
 
 int main(int argc, char* argv[]) {
     // Arguments
-    char* payload = argv[1];
+    std::string payload = argv[1];
+    std::string encrypted_output_name = payload + "_ENC";
+    std::string decrypted_output_name = payload + "_DEC";
 
     // Key generation (assuming proper PRNG usage)
     std::array<uint8_t, 32> d{}, z{}; // seeds
@@ -55,7 +57,7 @@ int main(int argc, char* argv[]) {
 
     // Encryption
     std::ifstream input_file(payload, std::ios::binary);
-    std::ofstream encrypted_file("encrypted_file.bin", std::ios::binary);
+    std::ofstream encrypted_file(encrypted_output_name, std::ios::binary);
 
     while (input_file.peek() != EOF) {
         encrypt_chunk(input_file, encrypted_file, pkey);
@@ -65,8 +67,8 @@ int main(int argc, char* argv[]) {
     encrypted_file.close();
 
     // Decryption
-    std::ifstream encrypted_input_file("encrypted_file.bin", std::ios::binary);
-    std::ofstream decrypted_file("decrypted_file.txt", std::ios::binary);
+    std::ifstream encrypted_input_file(encrypted_output_name, std::ios::binary);
+    std::ofstream decrypted_file(decrypted_output_name, std::ios::binary);
 
     while (encrypted_input_file.peek() != EOF) {
         decrypt_chunk(encrypted_input_file, decrypted_file, skey);
