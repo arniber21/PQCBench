@@ -19,7 +19,7 @@ RUN ./payload 0_5gb_test 500 && \
 ./payload 16gb_test 16000 
 
 FROM ubuntu as runtime
-COPY --from=build /app/binaries /binaries
+COPY --from=build /app/experiment/binaries /binaries
 WORKDIR /binaries
 CMD ["./benchmark ./eccKEM 0_5gb_test && \
 ./benchmark ./eccKEM 1gb_test && \
