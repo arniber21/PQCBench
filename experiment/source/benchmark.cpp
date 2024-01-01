@@ -59,7 +59,7 @@ time_t getDeltaTime() { return time(NULL) - INITIAL_TIME; }
 */
 bool generatePerformanceReport(string filename, int totalTimeIntervals, vector<int> deltaTime, vector<double> memoryUsage, vector<double> cpuUsage) {
     // Create buffer for report
-    ofstream report("output/" + filename);
+    ofstream report(filename);
 
     // Create headers
     report << "Record,Time_Interval,Memory_Usage,CPU_Usage,\n";
