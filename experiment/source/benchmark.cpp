@@ -42,7 +42,6 @@ using std::chrono::milliseconds;
 #include "string.h"
 #include "sys/times.h"
 
-
 // Initial time
 const time_t INITIAL_TIME = time(NULL);
 
