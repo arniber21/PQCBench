@@ -60,7 +60,5 @@ int main(int argc, char* argv[]) {
     }
 
     buffer.close();
-
-
     return 0;
 }
