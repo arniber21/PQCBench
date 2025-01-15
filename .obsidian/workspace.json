@@ -4,15 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "9c4f890d85569976",
+        "id": "f80ca2029f23d0e4",
         "type": "tabs",
         "children": [
           {
-            "id": "0e96753454852697",
+            "id": "724ef6a2891b6647",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/Methods.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1254f826efab7930",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/Specific Concepts/Regev's Algorithm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbf0f183cfdff415",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "obsidian/Methods.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "obsidian/Methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "obsidian/Methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -114,19 +144,29 @@
             }
           },
           {
+            "id": "d93838b1c3ff82a7",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          },
+          {
             "id": "3bdad0bd8acff585",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "obsidian/Methods.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 416.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -138,22 +178,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e96753454852697",
+  "active": "724ef6a2891b6647",
   "lastOpenFiles": [
-    "experiment/binaries/encrypted_file.bin",
-    "experiment/binaries/1gb_test",
-    "experiment/CMakeFiles/Progress/6",
-    "experiment/CMakeFiles/kyberKEM.dir/source/kyberKEM.cpp.o",
-    "experiment/CMakeFiles/Progress/5",
-    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.internal.tmp04739",
-    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.make.tmp0163a",
-    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.internal.tmp5aeb2",
-    "experiment/CMakeFiles/kyberKEM.dir/compiler_depend.make.tmp6c5e1",
-    "experiment/CMakeFiles/Progress/10",
-    "experiment/CMakeFiles/Progress/9",
-    "experiment/source/kyber/subtle/README.md",
-    "experiment/source/kyber/sha3/README.md",
-    "experiment/source/kyber/dudect/README.md",
-    "experiment/source/kyber/README.md"
+    "out/Paper.synctex(busy)",
+    "obsidian/Paper.tex~",
+    "obsidian/Paper Outline.md",
+    "obsidian/Methods.md",
+    "obsidian/pdflatex25034.fls",
+    "obsidian/Paper.synctex(busy)",
+    "obsidian/pdflatex25015.fls",
+    "obsidian/tmp1.tmp",
+    "obsidian/pdflatex24912.fls",
+    "obsidian/pdflatex24891.fls",
+    "obsidian/pdflatex24872.fls",
+    "obsidian/pdflatex24838.fls",
+    "obsidian/pdflatex24813.fls",
+    "obsidian/Paper.md",
+    "obsidian/Specific Concepts/Learning With Errors.md",
+    "obsidian/Specific Concepts/Regev's Algorithm.md",
+    "obsidian/Specific Concepts/Shor's Algorithm.md",
+    "obsidian/Specific Concepts/Viability of Post-Quantum Cryptography.md",
+    "obsidian/Specific Concepts/RSA.md",
+    "obsidian/Specific Concepts/ECC.md",
+    "obsidian/Specific Concepts/KEM.md",
+    "obsidian/Specific Concepts/Diffie Hellman.md",
+    "obsidian/Specific Concepts/Quantum Computing.md",
+    "obsidian/Specific Concepts/Cryptography.md",
+    "obsidian/Specific Concepts/Methods.md",
+    "obsidian/Specific Concepts/Virtualization.md",
+    "obsidian/Specific Concepts/Store Now Decrypt Later.md",
+    "obsidian/Specific Concepts/Significance.md",
+    "obsidian/Specific Concepts/Summary of Findings.md",
+    "obsidian/Specific Concepts/Quantum Transition.md",
+    "obsidian/Specific Concepts/Notable Findings.md",
+    "obsidian/Specific Concepts/Next Steps.md",
+    "obsidian/Specific Concepts/Limitations.md",
+    "obsidian/Specific Concepts/Goals.md",
+    "obsidian/Specific Concepts/Why Method.md",
+    "obsidian/Specific Concepts/Data Analysis.md",
+    "Pasted image 20231231234131.png",
+    "Pasted image 20231231232631.png"
   ]
 }

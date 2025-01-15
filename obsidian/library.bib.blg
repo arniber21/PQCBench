@@ -1,0 +1,6 @@
+[0] Config.pm:307> INFO - This is Biber 2.17 running in TOOL mode
+[0] Config.pm:310> INFO - Logfile is 'library.bib.blg'
+[44] biber:340> INFO - === Thu Apr  4, 2024, 22:34:01
+[61] Biber.pm:4570> INFO - Looking for bibtex file 'library.bib'
+[73] bibtex.pm:1713> INFO - LaTeX decoding ...
+[121] bibtex.pm:1518> INFO - Found BibTeX data source 'library.bib'

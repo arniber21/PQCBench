@@ -1,8 +1,19 @@
 {
-  "pathToPandoc": "",
+  "pathToPandoc": "C:\\Program Files\\Pandoc\\pandoc.EXE",
   "tooltipDelay": 400,
-  "zoteroGroups": [],
+  "zoteroGroups": [
+    {
+      "id": 1,
+      "name": "My Library",
+      "lastUpdate": 1712598512361
+    }
+  ],
   "renderCitations": true,
   "renderCitationsReadingMode": true,
-  "renderLinkCitations": true
+  "renderLinkCitations": true,
+  "pathToBibliography": "C:\\Users\\arnab\\Desktop\\pqcbench\\obsidian\\library.bib",
+  "pullFromZotero": true,
+  "cslStyleURL": "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl",
+  "enableCiteKeyCompletion": true,
+  "showCitekeyTooltips": true
 }

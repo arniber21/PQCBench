@@ -1,0 +1,810 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{akleylekNewLatticebasedAuthentication2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1d931325e18d7a54939693e532853f03}{%
+           family={Akleylek},
+           familyi={A\bibinitperiod},
+           given={Sedat},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f15c6990fc3e3e17ee28164e941c75e}{%
+           family={Soysaldı},
+           familyi={S\bibinitperiod},
+           given={Meryem},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d5767048a773ce2ea943afcaf739dcf1}
+      \strng{fullhash}{d5767048a773ce2ea943afcaf739dcf1}
+      \strng{bibnamehash}{d5767048a773ce2ea943afcaf739dcf1}
+      \strng{authorbibnamehash}{d5767048a773ce2ea943afcaf739dcf1}
+      \strng{authornamehash}{d5767048a773ce2ea943afcaf739dcf1}
+      \strng{authorfullhash}{d5767048a773ce2ea943afcaf739dcf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we propose a lattice-based authentication scheme for IoT technologies such as RFID systems. The security of the proposed scheme is based on ISIS problem which helps to resist to quantum attacks. The proposed scheme satisfies zero-knowledge property. Moreover, the location privacy, unforgeability, scalability and forward secrecy properties are achieved. The proposed scheme also has a resistance to man in the middle, replay and impersonation attacks. Moreover, its efficiency is comparable with the recent studies.}
+      \field{issn}{2214-2126}
+      \field{journaltitle}{Journal of Information Security and Applications}
+      \field{month}{2}
+      \field{title}{A New Lattice-Based Authentication Scheme for {{IoT}}}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{64}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{103053}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jisa.2021.103053
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2214212621002398
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2214212621002398
+      \endverb
+      \keyw{Authentication scheme,Internet of things,Lattice-based,Post-quantum cryptography,Radio-frequency identification tags}
+    \endentry
+    \entry{blanco-chaconRingLearningErrors2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bedc3c19e449f1f84b0c2d3a81117655}{%
+           family={Blanco-Chacón},
+           familyi={B\bibinithyphendelim C\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \strng{fullhash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \strng{bibnamehash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \strng{authorbibnamehash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \strng{authornamehash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \strng{authorfullhash}{bedc3c19e449f1f84b0c2d3a81117655}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The present survey reports on the state of the art of the different cryptographic functionalities built upon the ring learning with errors problem and its interplay with several classical problems in algebraic number theory. The survey is based to a certain extent on an invited course given by the author at the Basque Center for Applied Mathematics in September 2018.}
+      \field{month}{2}
+      \field{shorttitle}{Ring {{Learning}} with {{Errors}}}
+      \field{title}{Ring {{Learning}} with {{Errors}}: {{A Crossroads Between Post-Quantum Cryptography}}, {{Machine Learning}} and {{Number Theory}}}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{dhillonEllipticCurveCryptography2016}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5db8934350ea8ea76af065ab8dc3f64b}{%
+           family={Dhillon},
+           familyi={D\bibinitperiod},
+           given={Parwinder\bibnamedelima Kaur},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5971a8bc76ec147175d0ed5d3998f059}{%
+           family={Kalra},
+           familyi={K\bibinitperiod},
+           given={Sheetal},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a597491ebe35e9015b7972090ad462d8}
+      \strng{fullhash}{a597491ebe35e9015b7972090ad462d8}
+      \strng{bibnamehash}{a597491ebe35e9015b7972090ad462d8}
+      \strng{authorbibnamehash}{a597491ebe35e9015b7972090ad462d8}
+      \strng{authornamehash}{a597491ebe35e9015b7972090ad462d8}
+      \strng{authorfullhash}{a597491ebe35e9015b7972090ad462d8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Internet of things (IoT) is a growing network of embedded devices that can interact with the external environment. With this increasing global network, electronic communication between devices is becoming wireless and ubiquitous. Also, most of the IoT services will be realized as real time embedded systems which rely heavily on security mechanisms. This makes security imperative to embedded devices in IoT. This paper presents security challenges faced by system designers while designing secure embedded systems. The most difficult task for embedded system security is implementation of Public Key Cryptography (PKC). PKC based on Elliptic Curve Cryptography (ECC) which uses smaller key sizes is efficient for both private and public operations. Moreover, with IoT several embedded devices are becoming interconnected which makes ECC advantageous when you need to embed security. The comparative study suggests that ECC is best suited for resource constrained real time embedded systems in IoT.}
+      \field{booktitle}{2016 5th {{International Conference}} on {{Wireless Networks}} and {{Embedded Systems}} ({{WECON}})}
+      \field{month}{10}
+      \field{title}{Elliptic Curve Cryptography for Real Time Embedded Systems in {{IoT}} Networks}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/WECON.2016.7993462
+      \endverb
+      \keyw{Authentication,cryptography,ECC,Elliptic curve cryptography,Embedded systems,internet of things,Protocols,real time embedded systems,Real-time systems,security}
+    \endentry
+    \entry{ebrahimiPostQuantumCryptoprocessorsOptimized2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1460c0f8bd18283d6c15f8f039a4343}{%
+           family={Ebrahimi},
+           familyi={E\bibinitperiod},
+           given={Shahriar},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fea627c7adc21c55781d58253cd48b5}{%
+           family={Bayat-Sarmadi},
+           familyi={B\bibinithyphendelim S\bibinitperiod},
+           given={Siavash},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae3752c478781ee31345cdeca7d742e6}{%
+           family={Mosanaei-Boorani},
+           familyi={M\bibinithyphendelim B\bibinitperiod},
+           given={Hatameh},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \strng{fullhash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \strng{bibnamehash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \strng{authorbibnamehash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \strng{authornamehash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \strng{authorfullhash}{9d256d3823d5329bddc0b4da8499ef2a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By exponential increase in applications of the Internet of Things (IoT), such as smart ecosystems or e-health, more security threats have been introduced. In order to resist known attacks for IoT networks, multiple security protocols must be established among nodes. Thus, IoT devices are required to execute various cryptographic operations, such as public key encryption/decryption. However, classic public key cryptosystems, such as Rivest-Shammir-Adlemon and elliptic curve cryptography are computationally more complex to be efficiently implemented on IoT devices and are vulnerable regarding quantum attacks. Therefore, after complete development of quantum computing, these cryptosystems will not be secure and practical. In this paper, we propose InvRBLWE, an optimized variant for binary learning with errors over the ring (Ring-LWE) scheme that is proven to be secure against quantum attacks and is highly efficient for hardware implementations. We propose two architectures for InvRBLWE: 1) a high-speed architecture targeting edge and powerful IoT devices and 2) an ultralightweight architecture, which can be implemented on resource-constrained nodes in IoT. The proposed architectures are scalable regarding security levels and we provide experimental results for two versions of the InvRBLWE scheme providing 84 and 190 bits of classic security. Our implementation results on field programmable gate array dominate the best of the classic and post-quantum previous implementations. Moreover, our two different application specific integrated circuit (ASIC) implementations show improvement in terms of speed, area, power, and/or energy. To the best of our knowledge, we are the first to implement learning with error-based cryptosystems on ASIC platform.}
+      \field{issn}{2327-4662}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{Post-{{Quantum Cryptoprocessors Optimized}} for {{Edge}} and {{Resource-Constrained Devices}} in {{IoT}}}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{5500\bibrangedash 5507}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/JIOT.2019.2903082
+      \endverb
+      \keyw{Computer architecture,Elliptic curve cryptography,Hardware,Hardware implementation,Internet of Things,Internet of Things (IoT),lattice-based cryptography,post-quantum cryptography,ring learning with errors (Ring-LWEs)}
+    \endentry
+    \entry{gisinQuantumCryptography2002}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=cb3d0bc2c4a232b4d04dd67437cb2861}{%
+           family={Gisin},
+           familyi={G\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63bfe3bd083570acf7ce95ae9f05e813}{%
+           family={Ribordy},
+           familyi={R\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8a9e8e6fcee381d8a78c93f1232ba10}{%
+           family={Tittel},
+           familyi={T\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=974f0cb090f5ca893f19589e78702a38}{%
+           family={Zbinden},
+           familyi={Z\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9657fa9ae817da856c965b2f758dd97}
+      \strng{fullhash}{d008503869ca8c5b393352fca6c9d252}
+      \strng{bibnamehash}{d008503869ca8c5b393352fca6c9d252}
+      \strng{authorbibnamehash}{d008503869ca8c5b393352fca6c9d252}
+      \strng{authornamehash}{f9657fa9ae817da856c965b2f758dd97}
+      \strng{authorfullhash}{d008503869ca8c5b393352fca6c9d252}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum cryptography could well be the first application of quantum mechanics at the single-quantum level. The rapid progress in both theory and experiment in recent years is reviewed, with emphasis on open questions and technological issues.}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Quantum Cryptography}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{74}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{145\bibrangedash 195}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.74.145
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.74.145
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.74.145
+      \endverb
+    \endentry
+    \entry{guillenPostquantumSecurityIoT2017}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=f196dc6be8aeca2ea7db75fa5e806587}{%
+           family={Guillen},
+           familyi={G\bibinitperiod},
+           given={Oscar\bibnamedelima M.},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06e30c8599fd2968694f6e15d41c182c}{%
+           family={Pöppelmann},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae1c9accb734c6302ac11e916823c080}{%
+           family={Bermudo\bibnamedelima Mera},
+           familyi={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9956d3c4df9597e0d9f87fd30d117854}{%
+           family={Bongenaar},
+           familyi={B\bibinitperiod},
+           given={Elena\bibnamedelima Fuentes},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9916152d9275c77d7322eea36705ae8}{%
+           family={Sepulveda},
+           familyi={S\bibinitperiod},
+           given={Johanna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5a717789021f0aed2d3521c9a3300d4}
+      \strng{fullhash}{8be4b07afd2d27b8fcfde6b8f05964b2}
+      \strng{bibnamehash}{8be4b07afd2d27b8fcfde6b8f05964b2}
+      \strng{authorbibnamehash}{8be4b07afd2d27b8fcfde6b8f05964b2}
+      \strng{authornamehash}{c5a717789021f0aed2d3521c9a3300d4}
+      \strng{authorfullhash}{8be4b07afd2d27b8fcfde6b8f05964b2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The NTRU cryptosystem is one of the main alternatives for practical implementations of post-quantum, public-key cryptography. In this work, we analyze the feasibility of employing the NTRU encryption scheme, NTRUEncrypt, in resource constrained devices such as those used for Internet-of-Things endpoints. We present an analysis of NTRUEncrypt's advantages over other cryptosystems for use in such devices. We describe four different NTRUEncrypt implementations on an ARM Cortex M0-based microcontroller, compare their results, and show that NTRUEncrypt is suitable for use in battery-operated devices. We present performance and memory footprint figures for different security parameters, as well as energy consumption in a resource constrained microcontroller to backup these claims. Furthermore, to the best of our knowledge, in this work we present the first time-independent implementation of NTRUEncrypt.}
+      \field{booktitle}{Design, {{Automation}} \& {{Test}} in {{Europe Conference}} \& {{Exhibition}} ({{DATE}}), 2017}
+      \field{month}{3}
+      \field{title}{Towards Post-Quantum Security for {{IoT}} Endpoints with {{NTRU}}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{698\bibrangedash 703}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/DATE.2017.7927079
+      \endverb
+      \keyw{Elliptic curve cryptography,embedded devices,Encryption,IoT,Microcontrollers,NTRUEncrypt,Optimization,post-quantum,security}
+    \endentry
+    \entry{hekkalaImplementingPostquantumCryptography2023}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=55fea0d4bf764ba265e4180bc2f5f607}{%
+           family={Hekkala},
+           familyi={H\bibinitperiod},
+           given={Julius},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77e6e117993889c32355d52f9aebb22c}{%
+           family={Muurman},
+           familyi={M\bibinitperiod},
+           given={Mari},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f1bcc9ea064199846759e9e98c1ceb5}{%
+           family={Halunen},
+           familyi={H\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16a31d6611af11a4f8d7934e7fee43ec}{%
+           family={Vallivaara},
+           familyi={V\bibinitperiod},
+           given={Visa},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{35c38531433fea5c330b72c4293fab85}
+      \strng{fullhash}{7722919b0872b74329aedf89eaab1daf}
+      \strng{bibnamehash}{7722919b0872b74329aedf89eaab1daf}
+      \strng{authorbibnamehash}{7722919b0872b74329aedf89eaab1daf}
+      \strng{authornamehash}{35c38531433fea5c330b72c4293fab85}
+      \strng{authorfullhash}{7722919b0872b74329aedf89eaab1daf}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Widely used public key cryptography is threatened by the development of quantum computers. Post-quantum algorithms have been designed for the purpose of protecting sensitive data against attacks with quantum computers. National Institute of Standards and Technology has recently reached the end of the third round of post-quantum standardization process and has published three digital signatures and one key encapsulation mechanism for standardization. Three of the chosen algorithms are based on lattices. When implementing complex cryptographic algorithms, developers commonly use cryptographic libraries in their solutions to avoid mistakes. However, most of the open-source cryptography libraries do not yet have post-quantum algorithms integrated in them. We chose a C++ cryptography library, Crypto++, and created a fork where we integrated four lattice-based post-quantum algorithms. We analyzed the challenges in the process as well as the performance, correctness and security of the implemented algorithms. The performance of the integrated algorithms was overall good, but the integration process had its challenges, many of which were caused by the mathematical complexity of lattice-based algorithms. Different open-source implementations of post-quantum algorithms will be essential to their easier use for developers. Usability of the implementations is also important to avoid possible mistakes when using the algorithms.}
+      \field{issn}{2661-8907}
+      \field{journaltitle}{SN COMPUT. SCI.}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Implementing {{Post-quantum Cryptography}} for {{Developers}}}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{4}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{365}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s42979-023-01724-1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s42979-023-01724-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s42979-023-01724-1
+      \endverb
+      \keyw{C++,Lattice cryptography,Post-quantum cryptography,Programming library}
+    \endentry
+    \entry{khalidLatticebasedCryptographyIoT2019}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b5aadc0d7e407811baa5dc1da484030e}{%
+           family={Khalid},
+           familyi={K\bibinitperiod},
+           given={Ayesha},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fc3708c1ab1d97b9c181095cb311595}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c556a23f21553d189c408ce7cc6b0a}{%
+           family={O’Neill},
+           familyi={O\bibinitperiod},
+           given={Maire},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=454a18c08cf718b6c8e4a7d6145b3198}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Weiqiang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6f1f3273aefd4de27885bed5cf7c1212}
+      \strng{fullhash}{a16f4c5680a4fec81a527dde8ef81dcd}
+      \strng{bibnamehash}{a16f4c5680a4fec81a527dde8ef81dcd}
+      \strng{authorbibnamehash}{a16f4c5680a4fec81a527dde8ef81dcd}
+      \strng{authornamehash}{6f1f3273aefd4de27885bed5cf7c1212}
+      \strng{authorfullhash}{a16f4c5680a4fec81a527dde8ef81dcd}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The impending realization of scalable quantum computers has led to active research in Post Quantum Cryptography (PQC). The challenge is harder for embedded IoT (edge) devices, due to their pervasive diffusion in today's world as well as their stricter resources (tight area and energy budgets). Amongst various classes of quantum-resistant cryptography schemes, Lattice- based Cryptography (LBC) is emerging as one of the most viable, almost half of the `survivors' of second round of the NIST's PQC competition are lattice-based in construction. This paper surveys the practicality of deployment of these schemes. In this context, the state-of-the-art LBC implementations on the constrained devices (including low-power FPGAs and embedded microprocessors), leading in terms of low-power footprint, small area, compact bandwidth requirements and high performance is fairly evaluated and bench-marked. The work concludes by identifying a suite of some favorite LBC schemes in terms of various IoT critical performance bench-marks.}
+      \field{booktitle}{2019 {{IEEE}} 8th {{International Workshop}} on {{Advances}} in {{Sensors}} and {{Interfaces}} ({{IWASI}})}
+      \field{month}{6}
+      \field{shorttitle}{Lattice-Based {{Cryptography}} for {{IoT}} in {{A Quantum World}}}
+      \field{title}{Lattice-Based {{Cryptography}} for {{IoT}} in {{A Quantum World}}: {{Are We Ready}}?}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{194\bibrangedash 199}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IWASI.2019.8791343
+      \endverb
+      \keyw{Bandwidth,Cryptography,Internet of Things,IoT security,Lattices,NIST,Post quantum cryptography,Quantum Safe cryptography}
+    \endentry
+    \entry{lamCryptographyComputationalNumber2001}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=09cce3661eca85e3cae079f09ea411e5}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Kwok-Yan},
+           giveni={K\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=075c912a0d9625328abe7a614a6c413c}{%
+           family={Shparlinski},
+           familyi={S\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7266c8f88e24dbee8bce391e02663a0b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Huaxiong},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=846628120204c13f9b112434338f8eab}{%
+           family={Xing},
+           familyi={X\bibinitperiod},
+           given={Chaoping},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Basel}%
+      }
+      \list{publisher}{1}{%
+        {Birkhäuser}%
+      }
+      \strng{namehash}{0c4ae14011926cde859a3dc4b59e3ca8}
+      \strng{fullhash}{0a1a08f075a9ebaa88bcc96ca99b5e16}
+      \strng{bibnamehash}{0a1a08f075a9ebaa88bcc96ca99b5e16}
+      \strng{editorbibnamehash}{0a1a08f075a9ebaa88bcc96ca99b5e16}
+      \strng{editornamehash}{0c4ae14011926cde859a3dc4b59e3ca8}
+      \strng{editorfullhash}{0a1a08f075a9ebaa88bcc96ca99b5e16}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-0348-9507-1 978-3-0348-8295-8}
+      \field{langid}{english}
+      \field{title}{Cryptography and {{Computational Number Theory}}}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-0348-8295-8
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-3-0348-8295-8
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-3-0348-8295-8
+      \endverb
+      \keyw{computational number theory,Computer Science,cryptography,cryptosystems,information,number theory,theoretical computer science}
+    \endentry
+    \entry{liuIoTNUMSEvaluatingNUMS2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0f3ab2d51ed15f5c7252074b7a9bb7c8}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c224b6066996823269409a6c8d66f6c}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={Hwajeong},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9589efd65adb8bde403967114b4f005c}
+      \strng{fullhash}{9589efd65adb8bde403967114b4f005c}
+      \strng{bibnamehash}{9589efd65adb8bde403967114b4f005c}
+      \strng{authorbibnamehash}{9589efd65adb8bde403967114b4f005c}
+      \strng{authornamehash}{9589efd65adb8bde403967114b4f005c}
+      \strng{authorfullhash}{9589efd65adb8bde403967114b4f005c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In 2015, NIST held a workshop calling for new candidates for the next generation of elliptic curves to replace the almost two-decade old NIST curves. Nothing Upon My Sleeves (NUMS) curves are among the potential candidates presented in the workshop. Here, we present the first implementation of the NUMS256, NUMS379, and NUMS384 curves on two types of embedded devices. The implementations, which exhibit regular, constant-time execution to protect against timing and simple side-channel attacks, set new speed records and advance the state-of-the-art of curve-based (without endomorphism) scalar multiplication on 8-bit AVR and 32-bit ARM11 microcontrollers. For example, our NUMS256 implementation computes a scalar multiplication in 1.4 million cycles on a low-power 32-bit ARM11 microcontroller using mixed C and assembly language. These results demonstrate the potential of deploying IoT-NUMS on constrained and low-power applications such as protocols for the Internet of Things.}
+      \field{issn}{1556-6021}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shorttitle}{{{IoT-NUMS}}}
+      \field{title}{{{IoT-NUMS}}: {{Evaluating NUMS Elliptic Curve Cryptography}} for {{IoT Platforms}}}
+      \field{volume}{14}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{720\bibrangedash 729}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TIFS.2018.2856123
+      \endverb
+      \keyw{ARM11,AVR ATmega,efficient software implementation,Elliptic curve cryptography,Elliptic curves,Internet of Things,NUMS curves,Program processors,Standards}
+    \endentry
+    \entry{schneierAppliedCryptographyProtocols1996}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8df23ab843a37bf97ea40354db74d15}{%
+           family={Schneier},
+           familyi={S\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{fullhash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{bibnamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authorbibnamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authornamehash}{d8df23ab843a37bf97ea40354db74d15}
+      \strng{authorfullhash}{d8df23ab843a37bf97ea40354db74d15}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{". . .the best introduction to cryptography I've ever seen. . . .The book the National Security Agency wanted never to be published. . . ." -Wired Magazine ". . .monumental . . . fascinating . . . comprehensive . . . the definitive work on cryptography for computer programmers . . ." -Dr. Dobb's Journal ". . .easily ranks as one of the most authoritative in its field." -PC Magazine ". . .the bible of code hackers." -The Millennium Whole Earth Catalog This new edition of the cryptography classic provides you with a comprehensive survey of modern cryptography. The book details how programmers and electronic communications professionals can use cryptography-the technique of enciphering and deciphering messages-to maintain the privacy of computer data. It describes dozens of cryptography algorithms, gives practical advice on how to implement them into cryptographic software, and shows how they can be used to solve security problems. Covering the latest developments in practical cryptographic techniques, this new edition shows programmers who design computer applications, networks, and storage systems how they can build security into their software and systems. What's new in the Second Edition? * New information on the Clipper Chip, including ways to defeat the key escrow mechanism * New encryption algorithms, including algorithms from the former Soviet Union and South Africa, and the RC4 stream cipher * The latest protocols for digital signatures, authentication, secure elections, digital cash, and more * More detailed information on key management and cryptographic implementations}
+      \field{edition}{2nd edition}
+      \field{isbn}{978-0-471-11709-4}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{shorttitle}{Applied {{Cryptography}}}
+      \field{title}{Applied {{Cryptography}}: {{Protocols}}, {{Algorithms}}, and {{Source Code}} in {{C}}}
+      \field{year}{1996}
+      \field{dateera}{ce}
+    \endentry
+    \entry{seyhanLatticebasedCryptosystemsSecurity2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=083a3d0463d8ffaa0b2656fac39eedfd}{%
+           family={Seyhan},
+           familyi={S\bibinitperiod},
+           given={Kübra},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a3f01639faad1b8d44964fd4592eddc}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tu\bibnamedelima N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d931325e18d7a54939693e532853f03}{%
+           family={Akleylek},
+           familyi={A\bibinitperiod},
+           given={Sedat},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7adbaceb727911ca6d75d1ce72d31598}{%
+           family={Cengiz},
+           familyi={C\bibinitperiod},
+           given={Korhan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{656492de344872c4f64523707b83fa15}
+      \strng{fullhash}{e920b941dbf1d1006ac664badddbad8a}
+      \strng{bibnamehash}{e920b941dbf1d1006ac664badddbad8a}
+      \strng{authorbibnamehash}{e920b941dbf1d1006ac664badddbad8a}
+      \strng{authornamehash}{656492de344872c4f64523707b83fa15}
+      \strng{authorfullhash}{e920b941dbf1d1006ac664badddbad8a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The concept of the Internet of Things (IoT) arises due to the change in the characteristics and numbers of smart devices. Communication of things makes it important to ensure security in this interactive architecture. One of the developments that are subject to change in IoT environments is post-quantum cryptography. This evolution, which includes the change of asymmetric cryptosystems, affects the security of IoT devices. In this paper, fundamental characteristics and layered architecture of IoT environments are examined. Basic security requirements and solution technologies for IoT architecture are remembered. Some important open problems in the literature for IoT device security are recalled. From these open problems, the post-quantum security of IoT devices with limited resources is focused. The main purpose of this paper is to improve the constrained resource classification and give a point of view for post-quantum IoT security. In this context, a sensitive classification is proposed by improving the limited resource classification of IETF. The cryptosystem efficiency definition is made for the analysis of resource-constrained device security. Using the proposed classification and efficiency definition, the usage of lattice-based cryptosystems in resource-constrained IoT device security is analyzed.}
+      \field{issn}{1573-7543}
+      \field{journaltitle}{Cluster Comput}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shorttitle}{Lattice-Based Cryptosystems for the Security of Resource-Constrained {{IoT}} Devices in Post-Quantum World}
+      \field{title}{Lattice-Based Cryptosystems for the Security of Resource-Constrained {{IoT}} Devices in Post-Quantum World: A Survey}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{volume}{25}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1729\bibrangedash 1748}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s10586-021-03380-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10586-021-03380-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10586-021-03380-7
+      \endverb
+      \keyw{IoT,Lattice-based cryptography,Post-quantum cryptography,Resource-constrained device}
+    \endentry
+    \entry{singhAdvancedLightweightEncryption2017}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=72046c7dbd4a54893754d1a062d4533d}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Saurabh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86e5f7f5e66db6fc94eb8eda066408a0}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Pradip\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b82ea9602020e4e22b51bf6fe4a96cc}{%
+           family={Moon},
+           familyi={M\bibinitperiod},
+           given={Seo\bibnamedelima Yeon},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d80f5a5e858e8ace83db34aafb95bc79}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jong\bibnamedelima Hyuk},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb5c69d80e0eb6ef608fc0ed92231d34}
+      \strng{fullhash}{3dac10cbf0bd67f68ec659dc3eb2810a}
+      \strng{bibnamehash}{3dac10cbf0bd67f68ec659dc3eb2810a}
+      \strng{authorbibnamehash}{3dac10cbf0bd67f68ec659dc3eb2810a}
+      \strng{authornamehash}{cb5c69d80e0eb6ef608fc0ed92231d34}
+      \strng{authorfullhash}{3dac10cbf0bd67f68ec659dc3eb2810a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{There are many emerging areas in which highly constrained devices are interconnected and communicated to accomplish some tasks. Nowadays, Internet of Things (IoT) enables many low resources and constrained devices to communicate, compute process and make decision in the communication network. In the heterogeneous environments for IoT, there are many challenges and issues like power consumption of devices, limited battery, memory space, performance cost, and security in the Information Communication Technology (ICT) network. In this paper, we discuss a state-of-art of lightweight cryptographic primitives which include lightweight block ciphers, hash function, stream ciphers, high performance system, and low resources device for IoT environment in details. We analyze many lightweight cryptographic algorithms based on their key size, block size, number of rounds, and structures. In addition, we discuss the security architecture in IoT for constrained device environment, and focus on research challenges, issues and solutions. Finally, a proposed security scheme with a service scenario for an improvement of resource constrained IoT environment and open issues are discussed.}
+      \field{issn}{1868-5145}
+      \field{journaltitle}{J Ambient Intell Human Comput}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shorttitle}{Advanced Lightweight Encryption Algorithms for {{IoT}} Devices}
+      \field{title}{Advanced Lightweight Encryption Algorithms for {{IoT}} Devices: Survey, Challenges and Solutions}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s12652-017-0494-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12652-017-0494-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12652-017-0494-4
+      \endverb
+      \keyw{Constrained devices,Internet-of-things,Lightweight cryptography,Symmetric algorithms}
+    \endentry
+    \entry{DigitalSignatureStandard2023}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f664ddc8f930a656e0ddc82089fad053}{%
+           family={Standards\bibnamedelimb {and}\bibnamedelima Technology},
+           familyi={S\bibinitperiod\bibinitdelim a\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={National\bibnamedelima Institute},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Department of Commerce}%
+      }
+      \strng{namehash}{f664ddc8f930a656e0ddc82089fad053}
+      \strng{fullhash}{f664ddc8f930a656e0ddc82089fad053}
+      \strng{bibnamehash}{f664ddc8f930a656e0ddc82089fad053}
+      \strng{authorbibnamehash}{f664ddc8f930a656e0ddc82089fad053}
+      \strng{authornamehash}{f664ddc8f930a656e0ddc82089fad053}
+      \strng{authorfullhash}{f664ddc8f930a656e0ddc82089fad053}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This standard specifies a suite of algorithms that can be used to generate a digital signature. Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed data can use a digital signature as evidence in demonstrating to a third party that the signature was, in fact, generated by the claimed signatory. This is known as non-repudiation since the signatory cannot easily repudiate the signature at a later time.}
+      \field{day}{3}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{Federal Information Processing Standard (FIPS) 186-5}
+      \field{title}{Digital {{Signature Standard}} ({{DSS}})}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.6028/NIST.FIPS.186-5
+      \endverb
+      \verb{file}
+      \verb C:\Users\arnab\Zotero\storage\QVWT576B\Technology - 2023 - Digital Signature Standard (DSS).pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://csrc.nist.gov/pubs/fips/186-5/final
+      \endverb
+      \verb{url}
+      \verb https://csrc.nist.gov/pubs/fips/186-5/final
+      \endverb
+    \endentry
+    \entry{ThreeDraftFIPS2023}{report}{}
+      \list{institution}{1}{%
+        {National Institute for Standards in Technology}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{abstract}{NIST requests comments on the initial public drafts of three Federal Information Processing Standards (FIPS) - FIPS 203, 204 and 205. The deadline to submit comments is November 22, 2023.}
+      \field{langid}{american}
+      \field{month}{8}
+      \field{title}{Three {{Draft FIPS}} for {{Post-Quantum Cryptography}} \textbackslash textbar {{CSRC}}}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://csrc.nist.gov/News/2023/three-draft-fips-for-post-quantum-cryptography
+      \endverb
+      \verb{url}
+      \verb https://csrc.nist.gov/News/2023/three-draft-fips-for-post-quantum-cryptography
+      \endverb
+    \endentry
+    \entry{westerbaanX25519Kyber768Draft00HybridPostquantum2023}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=579ee28a03f197f9d59ca988fcc31b57}{%
+           family={Westerbaan},
+           familyi={W\bibinitperiod},
+           given={Bas},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a8502de61eb320277cd5ba32a784d2a}{%
+           family={Stebila},
+           familyi={S\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{4c368d095924bce66be6349515984bcf}
+      \strng{fullhash}{4c368d095924bce66be6349515984bcf}
+      \strng{bibnamehash}{4c368d095924bce66be6349515984bcf}
+      \strng{authorbibnamehash}{4c368d095924bce66be6349515984bcf}
+      \strng{authornamehash}{4c368d095924bce66be6349515984bcf}
+      \strng{authorfullhash}{4c368d095924bce66be6349515984bcf}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This memo defines X25519Kyber768Draft00, a hybrid post-quantum key exchange for TLS 1.3.}
+      \field{month}{3}
+      \field{number}{draft-tls-westerbaan-xyber768d00-02}
+      \field{title}{{{X25519Kyber768Draft00}} Hybrid Post-Quantum Key Agreement}
+      \field{type}{Internet Draft}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00-02
+      \endverb
+      \verb{url}
+      \verb https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00-02
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

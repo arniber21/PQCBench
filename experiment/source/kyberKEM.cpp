@@ -27,6 +27,7 @@ void encrypt_chunk(std::ifstream& input_file, std::ofstream& encrypted_file,
     std::array<uint8_t, SSBYTES> ss{};
 
     input_file.read(reinterpret_cast<char*>(ss.data()), SSBYTES);
+    std::cout << input_file.tellg() / 500000000.0 << std::endl;
     auto skdf = kyber512_kem::encapsulate(ss, pkey, cipher);
     encrypted_file.write(reinterpret_cast<char*>(cipher.data()), kyber512_kem::CIPHER_LEN);
 }
@@ -50,7 +51,7 @@ int main(int argc, char* argv[]) {
     std::string decrypted_output_name = payload + "_DEC";
 
     // Key generation (assuming proper PRNG usage)
-    std::array<uint8_t, 32> d{}, z{}; // seeds
+    std::array<uint8_t, SSBYTES> d{}, z{}; // seeds
     std::array<uint8_t, kyber512_kem::PKEY_LEN> pkey{};
     std::array<uint8_t, kyber512_kem::SKEY_LEN> skey{};
     kyber512_kem::keygen(d, z, pkey, skey);

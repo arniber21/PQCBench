@@ -1,0 +1,4 @@
+# KEM
+For the purposes of this paper, we shall consider a cryptographic scheme (cryptosystem) as any KEM, or Key Exchange Mechanism. A KEM is a corresponding set of three algorithms. There are many more complexities to a KEM than specified in this paper; however, those details are not necessary for the purposes of understanding this paper. The first algorithm in a KEM is a key generation algorithm, which generates two keys: a public key and a private key (also called a secret key). 
+
+The second KEM algorithm is called an encryption or encapsulation algorithm. As the name suggests, the encryption algorithm obfuscates the plaintext and returns a ciphertext. Crucially, this function takes the aforementioned public key as an input. The third algorithm, then, is called a decryption or decapsulation algorithm. This algorithm performs the inverse of the encryption algorithm, taking both the generated ciphertext and the private key. 

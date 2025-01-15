@@ -4,8 +4,27 @@
   "pdfExportImageDPI": 120,
   "pdfExportImageFormat": "jpg",
   "pdfExportImageQuality": 90,
-  "citeFormats": [],
-  "exportFormats": [],
+  "citeFormats": [
+    {
+      "name": "Format #2",
+      "format": "pandoc",
+      "brackets": true
+    },
+    {
+      "name": "Format #1",
+      "format": "latex",
+      "command": "cite"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Import #1",
+      "outputPathTemplate": "{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "cslStyle": "chicago-author-date"
+    }
+  ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
   "openNoteAfterImport": false,
   "whichNotesToOpenAfterImport": "first-imported-note"

@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Paper.blg'
+[97] biber-MSWIN64:340> INFO - === 
+[136] Biber.pm:419> INFO - Reading 'Paper.bcf'
+[286] Biber.pm:979> INFO - Found 16 citekeys in bib section 0
+[300] Biber.pm:4419> INFO - Processing section 0
+[312] Biber.pm:4610> INFO - Looking for bibtex file 'library.bib' for section 0
+[365] bibtex.pm:1713> INFO - LaTeX decoding ...
+[453] bibtex.pm:1519> INFO - Found BibTeX data source 'C:\Users\arnab\Desktop\pqcbench\obsidian\library.bib'
+[582] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[582] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[582] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[582] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[582] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[603] bbl.pm:660> INFO - Writing 'Paper.bbl' with encoding 'UTF-8'
+[616] bbl.pm:763> INFO - Output to Paper.bbl
+[616] Biber.pm:131> WARN - ISBN '978-3-0348-9507-1 978-3-0348-8295-8' in entry 'lamCryptographyComputationalNumber2001' is invalid - run biber with '--validate_datamodel' for details.
+[617] Biber.pm:133> INFO - WARNINGS: 1

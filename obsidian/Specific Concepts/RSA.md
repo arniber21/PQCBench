@@ -1,9 +1,9 @@
 # RSA
 ## General Information
-RSA is the most important encryption scheme to modern cryptography. It was the first robust and publicly distributed encryption algorithm and has been in use since its inception in the late 20th century. 
+The most prominent cipher in modern cryptography, [[RSA]] (named after its architects, Rivest-Shamir-Adleman), utilizes the *factoring into primes problem*, which considers the prime factorization of very large numbers. The scheme is named for the three scientists who devised it at the Massachusetts Institute of Technology in 1978. We define the factorization problem as follows: given a positive integer $x \in \mathbb{Z}^+$, find the unique set of prime numbers $p_1, p_2, p_3, \cdots p_n$ and integer exponents $k_1, k_2, k_3,\cdots,k_n$ such that $x = p_1^{k_1}p_2^{k_2}p_3^{k_3} \cdots p_n^{k_n}$. Interestingly, it has been mathematically proven that there is *no efficient way* to factor large numbers; even the fastest methods are little more effective than trial and error. 
+
+However, the factorization problem becomes trivial with a crucial bit of information: just one of these factors and an associated exponent. Given such a pair, we may simply divide the factor by x: $p^k \cdot x^{-1}$ in order to calculate the rest of the factorization trivially. Logically, then, [[RSA]] creates a cryptosystem using the prime factorization problem as defined below.  
 ## Mathematical Definition
-#### Prime Factorization
-RSA operates within the field of Number Theory. To guarantee security, it utilizes the prime factorization problem, which takes advantage of the fact that it is nigh unto impossible to factor a really large composite number unless you are already given one of the prime factors.  RSA takes this problem and puts it on steroids by utilizing very large numbers (often with hundreds or thousands of digits). 
 #### Key Generation
 First, we pick two very large numbers $p, q \in \mathbb{Z}$: 
 $$ p, q \in \mathbb{Z} \text{ (and very large) } $$
@@ -32,4 +32,3 @@ $$ c^d \equiv {m^e}^d \equiv m \mod{n}$$
 Notice that we did not generate $m$; rather, we found $m \mod{n}$. However, because $0 \leq m < n$, $m \mod{n} = m$. We have finished decrypting our message, upon which we can either de-hash or verify. 
 
 You may have noticed a flaw with the above appraisal: we assume that both parties already have the public and private keys. How, exactly, do we distribute the keys in such a way? For that, we have the [[Diffie Hellman]] algorithm. 
-## Use Cases

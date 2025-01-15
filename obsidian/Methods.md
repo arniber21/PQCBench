@@ -1,0 +1,50 @@
+## Methods
+We shall begin by stating the choices in the design of our experiment, then following up this overview with a justification of these choices. 
+
+In order to gauge the feasibility of the NIST-selected post-quantum algorithms, we opt to  test two algorithms: Kyber and ECC-KEM (the Elliptic Curve Integrated Encryption Scheme, or ECIES). Our approach is purely quantitative in nature, collecting the following performance metrics: CPU usage, as a percentage; memory usage, in megabytes; and time, in seconds. We use a Haswell-based 12-core Intel Xeon processor; however, we opt to test each algorithm on a single thread.  Additionally, in order to guarantee a level of separation from the base operating system, we run each benchmark inside a Docker virtual machine. 
+### Why Quantitative
+In line with most cryptographic benchmarks, we choose a quantitative study primarily to optimize ease of use. Quantitative figures are easily available when measuring CPU and memory usage; therefore, in order to take advantage of our mathematical toolkit to analyze figures, we opt to use quantitative data. Crucially, we plan to collect data at a scale in which manual data analysis is not feasible - quantitative data allows us to computationally analyze these results simultaneously to find the patterns we seek efficiently. 
+### Past Methods
+We primarily attempt to adhere to PQ-Crystals' own methodology for benchmarking Kyber in the design of this experiment [@westerbaanX25519Kyber768Draft00HybridPostquantum2023]. However, we must reconcile this goal with the reality that Kyber and ECIES are very different algorithms; therefore, because we must ensure that there are minimal differences in the benchmarking setup between the two algorithms, we opt to build our own benchmarking script for both ECIES and Kyber [@liuIoTNUMSEvaluatingNUMS2019]. Let us describe the individual benchmarking script for each algorithm a *test saddle*, and relegate the benchmark label to the script producing the performance data. 
+### Research Instruments
+Our experiment, then, in line with other experiments, designs a test saddle and runs this test saddle with a benchmark for each algorithm. We then compare the results for each of the discrete combinations we wish to test. One may notice a large discrepancy in our experiment compared to other experiments: whereas the majority of other experiments measure CPU performance primarily through cycles, we opt to measure CPU performance as a percentage of total CPU usage. We recognize that there are several advantages to using cycles over a percentage of total usage. Cycles are far more standardized and accurate when compared percentages. However, recall that the focus of this experiment is not to compute a direct performance comparison between the two algorithms; rather, we wish to gauge how *viable* post-quantum algorithms are. Also recall that it is well established that compute limitations on post-quantum algorithms are not limited even by small CPUs; rather, we are far more concerned with memory usage. As a consequence of testing two very different algorithms on Linux systems, it therefore makes sense to prioritize the convenience of gathering memory usage. In essence, we are sacrificing good CPU usage data in order to gain more reliable and useful information in the form of memory data. 
+
+### Procedures
+It is true that NIST has selected other post-quantum algorithms: namely, Dilithium; however, Dilithium and Kyber share the same mathematical foundation (the Learning With Errors problem). If the purpose of this study were to be a direct performance comparison between different cryptographic algorithms, we would be obligated to test both Dilithium and Kyber. However, because we solely wish to test the feasibility of these algorithms rather than their direct performance, we conclude that it is adequate to simply test Kyber. Additionally, PQ-Crystals, the organization who developed both Kyber and Dilithium, provides direct CPU performance comparisons under small payloads; therefore, a performance comparison of the two is not necessary. Finally, note that we choose the official implementation of Kyber [@hekkalaImplementingPostquantumCryptography2023]. 
+
+Also note that this study does not attempt to use multi-threading to optimize either cipher. We choose not to take advantage of multithreading primarily to objectify the study as much as possible. This study does not make any assertions on the effect of effects of multithreading on the effectiveness of either ECIES or KEM, nor does it wish to. Because multithreaded approaches to neither are standardized, we wish to relegate the potential effects of multithreading to future studies and instead solely focus on the feasibility of the official specifications of Kyber and ECIES. Attempting to multithread each would introduce significant differences between the two, compromising any attempt at a comparison [@ebrahimiPostQuantumCryptoprocessorsOptimized2019]. We elaborate on this choice and its consequences in the limitations section of this paper. 
+
+Earlier, we note that we use Docker as a virtualization platform. We will briefly justify the use of a virtualization platform. A platform such as Docker allows us to minimize performance overhead while retaining a key advantage of virtualization: independence from the host system. This allows each test to remain as independent and equal as possible, with little to no difference in the starting environments.[@singhAdvancedLightweightEncryption2017] This can remove sources of random bias, such as the operating system mysteriously choosing to allocate more resources to one process over the other. The primary disadvantage of virtualization is the significant performance overhead induced by a virtual platform; however, Docker is minimal as to minimize this effect to where the loss in performance is negligible. Therefore, we opt to use Docker to increase the consistency of our study. 
+
+## Bibliography
+Akleylek, S., & Soysaldı, M. (2022). A new lattice-based authentication scheme for IoT. _Journal of Information Security and Applications_, _64_, 103053. [https://doi.org/10.1016/j.jisa.2021.103053](https://doi.org/10.1016/j.jisa.2021.103053)
+
+Blanco-Chacón, I. (2019). _Ring Learning with Errors: A Crossroads Between Post-Quantum Cryptography, Machine Learning and Number Theory_.
+
+Dhillon, P. K., & Kalra, S. (2016). Elliptic curve cryptography for real time embedded systems in IoT networks. _2016 5th International Conference on Wireless Networks and Embedded Systems (WECON)_, 1–6. [https://doi.org/10.1109/WECON.2016.7993462](https://doi.org/10.1109/WECON.2016.7993462)
+
+Ebrahimi, S., Bayat-Sarmadi, S., & Mosanaei-Boorani, H. (2019). Post-Quantum Cryptoprocessors Optimized for Edge and Resource-Constrained Devices in IoT. _IEEE Internet of Things Journal_, _6_(3), 5500–5507. [https://doi.org/10.1109/JIOT.2019.2903082](https://doi.org/10.1109/JIOT.2019.2903082)
+
+Gisin, N., Ribordy, G., Tittel, W., & Zbinden, H. (2002). Quantum cryptography. _Rev. Mod. Phys._, _74_(1), 145–195. [https://doi.org/10.1103/RevModPhys.74.145](https://doi.org/10.1103/RevModPhys.74.145)
+
+Guillen, O. M., Pöppelmann, T., Bermudo Mera, J. M., Bongenaar, E. F., Sigl, G., & Sepulveda, J. (2017). Towards post-quantum security for IoT endpoints with NTRU. _Design, Automation & Test in Europe Conference & Exhibition (DATE), 2017_, 698–703. [https://doi.org/10.23919/DATE.2017.7927079](https://doi.org/10.23919/DATE.2017.7927079)
+
+Hekkala, J., Muurman, M., Halunen, K., & Vallivaara, V. (2023). Implementing Post-quantum Cryptography for Developers. _SN COMPUT. SCI._, _4_(4), 365. [https://doi.org/10.1007/s42979-023-01724-1](https://doi.org/10.1007/s42979-023-01724-1)
+
+Khalid, A., McCarthy, S., O’Neill, M., & Liu, W. (2019). Lattice-based Cryptography for IoT in A Quantum World: Are We Ready? _2019 IEEE 8th International Workshop on Advances in Sensors and Interfaces (IWASI)_, 194–199. [https://doi.org/10.1109/IWASI.2019.8791343](https://doi.org/10.1109/IWASI.2019.8791343)
+
+Lam, K.-Y., Shparlinski, I., Wang, H., & Xing, C. (Eds.). (2001). _Cryptography and Computational Number Theory_. Birkhäuser. [https://doi.org/10.1007/978-3-0348-8295-8](https://doi.org/10.1007/978-3-0348-8295-8)
+
+Liu, Z., & Seo, H. (2019). IoT-NUMS: Evaluating NUMS Elliptic Curve Cryptography for IoT Platforms. _IEEE Transactions on Information Forensics and Security_, _14_(3), 720–729. [https://doi.org/10.1109/TIFS.2018.2856123](https://doi.org/10.1109/TIFS.2018.2856123)
+
+National Institute of Standards and Technology. (2023). _Digital Signature Standard (DSS)_ (Federal Information Processing Standard (FIPS) 186-5). U.S. Department of Commerce. [https://doi.org/10.6028/NIST.FIPS.186-5](https://doi.org/10.6028/NIST.FIPS.186-5)
+
+Schneier, B. (1996). _Applied Cryptography: Protocols, Algorithms, and Source Code in C_ (2nd edition). Wiley.
+
+Seyhan, K., Nguyen, T. N., Akleylek, S., & Cengiz, K. (2022). Lattice-based cryptosystems for the security of resource-constrained IoT devices in post-quantum world: a survey. _Cluster Comput_, _25_(3), 1729–1748. [https://doi.org/10.1007/s10586-021-03380-7](https://doi.org/10.1007/s10586-021-03380-7)
+
+Singh, S., Sharma, P. K., Moon, S. Y., & Park, J. H. (2017). Advanced lightweight encryption algorithms for IoT devices: survey, challenges and solutions. _J Ambient Intell Human Comput_. [https://doi.org/10.1007/s12652-017-0494-4](https://doi.org/10.1007/s12652-017-0494-4)
+
+Tiwari, H. D., & Kim, J. H. (2018). Novel Method for DNA-Based Elliptic Curve Cryptography for IoT Devices. _ETRI Journal_, _40_(3), 396–409. [https://doi.org/10.4218/etrij.2017-0220](https://doi.org/10.4218/etrij.2017-0220)
+
+Westerbaan, B., & Stebila, D. (2023). _X25519Kyber768Draft00 hybrid post-quantum key agreement_ (Internet Draft draft-tls-westerbaan-xyber768d00-02). Internet Engineering Task Force. [https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00-02](https://datatracker.ietf.org/doc/draft-tls-westerbaan-xyber768d00-02)

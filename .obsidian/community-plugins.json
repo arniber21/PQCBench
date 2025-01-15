@@ -1,5 +1,8 @@
 [
   "obsidian-pandoc",
   "obsidian-zotero-desktop-connector",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "obsidian-minimal-settings",
+  "better-word-count",
+  "obsidian-style-settings"
 ]

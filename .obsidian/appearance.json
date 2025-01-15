@@ -2,5 +2,7 @@
   "accentColor": "",
   "theme": "moonstone",
   "interfaceFontFamily": "SF Pro Display",
-  "baseFontSize": 16
+  "baseFontSize": 17,
+  "cssTheme": "Minimal",
+  "textFontFamily": "SF Pro Text"
 }

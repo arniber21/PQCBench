@@ -1,4 +1,4 @@
 # Diffie Hellman
-## Introduction
-A careful eye may notice a hole with the mathematical outline of the cryptographic algorithms: we assume that both parties have both keys. This generates a new question: how do we, exactly, distribute the keys securely? In the past, often with more archaic algorithms, the set of keys were agreed upon prior to the exchange. However, in the digital age, this is not exactly a robust method of key distribution. Luckily, we have access to a particularly clever algorithm that allows us to exchange keys: Diffie Hellman. 
-## 
+One may consider that previously, we presumed most cryptosystems to be using a singular key in order to crack the ciphertext. There is a problem with this single-key approach, however: we must convey the key somehow to the intended party without the prying eyes of unintended parties. In the past, this was achieved through physical means beforehand; however, in the modern era, most cryptosystems implement the Diffie-Hellman key exchange algorithm (or something very similar) to achieve this. 
+
+The details of the Diffie-Hellman algorithm are not necessary to understand this paper; simply recall that Diffie-Hellman results in the distribution of *two* keys: a public key and a private key. The public key is freely distributed, and the private key is solely in the hands of the two verified parties. The first algorithm of a KEM cryptosystem generates these two keys. 
